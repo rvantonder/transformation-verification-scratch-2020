@@ -9,6 +9,8 @@ Wall times:
 | `HTTPClient_InitializeRequestHeaders` | 5m9.417s             | 2m49.828s                                 | 2m51.882s          |
 | `HTTPClient_Send`                     | 0m15.208s            | 0m14.988s                                 | 0m14.772s          |
 
+`complete_rewrite` adds a `__CPROVER_assume` after all `assert` calls with `comby ' assert(:[cond]);' ' assert(:[cond]); __CPROVER_assume(:[cond]);' .c -stats -i`
+
 By proof:
 
 ## `HTTPClient_AddHeader`
