@@ -5,7 +5,7 @@ Wall times:
 | Proof                                 | f2bde65aa (original) | 9c2df097e `assert_then_assume` (modified [1](https://github.com/natasha-jeppu/aws-iot-device-sdk-embedded-C/blob/assert_then_assume/libraries/standard/http/src/http_client.c#L1136), [2](https://github.com/natasha-jeppu/aws-iot-device-sdk-embedded-C/blob/assert_then_assume/libraries/standard/http/src/http_client.c#L1216)) | `complete_rewrite` |
 |---------------------------------------|----------------------|-------------------------------------------|--------------------|
 | `HTTPClient_AddHeader`                | 7m1.147s             | 12m34.362s                                | 9m24.694s          |
-| `HTTPClient_AddRangeHeader`           | 3.058s               | 0m3.064s                                  | 0m3.737s           |
+| `HTTPClient_AddRangeHeader`           | 0m3.058s             | 0m3.064s                                  | 0m3.737s           |
 | `HTTPClient_InitializeRequestHeaders` | 5m9.417s             | 2m49.828s                                 | 2m51.882s          |
 | `HTTPClient_Send`                     | 0m15.208s            | 0m14.988s                                 | 0m14.772s          |
 
