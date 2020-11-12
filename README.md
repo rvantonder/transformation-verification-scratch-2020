@@ -15,8 +15,6 @@ By proof:
 
 ## `HTTPClient_AddHeader`
 
-"Runtime decision procedure"
-
 | Runtime decision procedure # | `original` | `assert_then_assume` | `complete_rewrite` |
 |------------------------------|------------|----------------------|--------------------|
 | 1                            | 419.596s   | 753.2s               | 563.585s           |
