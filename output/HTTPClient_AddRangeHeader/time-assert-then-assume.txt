@@ -1,0 +1,2143 @@
+mkdir -p /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/gotos/
+mkdir -p /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/logs/
+goto-cc  --export-file-local-symbols -fPIC -std=gnu90  -I/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/include -I/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/include -I/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src -I/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/third_party/http_parser -I/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/demos/http/http_demo_plaintext  -Dhttp_EXPORTS -DCBMC=1 -DCBMC_OBJECT_BITS=8 -DCBMC_MAX_OBJECT_SIZE="(SIZE_MAX>>(CBMC_OBJECT_BITS+1))" /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c -o /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/gotos/project1.goto 2>&1 | tee  /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/logs/project1.txt; exit ${PIPESTATUS[0]}
+goto-instrument   /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/gotos/project1.goto /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/gotos/project2.goto 2>&1 | tee  /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/logs/project2.txt; exit ${PIPESTATUS[0]}
+Reading GOTO program from '/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/gotos/project1.goto'
+Writing GOTO program to '/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/gotos/project2.goto'
+goto-cc  --function harness /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/gotos/proof2.goto /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/gotos/project2.goto -o /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/gotos/HTTPClient_AddRangeHeader_harness1.goto 2>&1 | tee  /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/logs/HTTPClient_AddRangeHeader_harness1.txt; exit ${PIPESTATUS[0]}
+goto-instrument   /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/gotos/HTTPClient_AddRangeHeader_harness1.goto /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/gotos/HTTPClient_AddRangeHeader_harness2.goto 2>&1 | tee  /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/logs/HTTPClient_AddRangeHeader_harness2.txt; exit ${PIPESTATUS[0]}
+Reading GOTO program from '/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/gotos/HTTPClient_AddRangeHeader_harness1.goto'
+Writing GOTO program to '/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/gotos/HTTPClient_AddRangeHeader_harness2.goto'
+goto-instrument  --drop-unused-functions /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/gotos/HTTPClient_AddRangeHeader_harness2.goto /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/gotos/HTTPClient_AddRangeHeader_harness3.goto 2>&1 | tee  /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/logs/HTTPClient_AddRangeHeader_harness3.txt; exit ${PIPESTATUS[0]}
+Reading GOTO program from '/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/gotos/HTTPClient_AddRangeHeader_harness2.goto'
+Function Pointer Removal
+file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c line 1546 function sendHttpData: replacing function pointer by 8 possible targets
+file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c line 1690 function receiveHttpData: replacing function pointer by 8 possible targets
+file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c line 492 function processCompleteHeader: replacing function pointer by 0 possible targets
+Virtual function removal
+Cleaning inline assembler statements
+Removing unused functions
+Dropping 47 of 59 functions (12 used)
+Writing GOTO program to '/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/gotos/HTTPClient_AddRangeHeader_harness3.goto'
+goto-instrument  --slice-global-inits /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/gotos/HTTPClient_AddRangeHeader_harness3.goto /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/gotos/HTTPClient_AddRangeHeader_harness4.goto 2>&1 | tee  /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/logs/HTTPClient_AddRangeHeader_harness4.txt; exit ${PIPESTATUS[0]}
+Reading GOTO program from '/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/gotos/HTTPClient_AddRangeHeader_harness3.goto'
+Slicing away initializations of unused global variables
+Writing GOTO program to '/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/gotos/HTTPClient_AddRangeHeader_harness4.goto'
+cp /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/gotos/HTTPClient_AddRangeHeader_harness4.goto /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/gotos/HTTPClient_AddRangeHeader_harness.goto
+cbmc  --flush --unwind 1 --unwindset strncmp.0:5 --unwindset convertInt32ToAscii.0:11 --unwindset convertInt32ToAscii.1:11 --object-bits 8 --bounds-check --conversion-check --div-by-zero-check --float-overflow-check --nan-check --pointer-check --pointer-overflow-check --signed-overflow-check --undefined-shift-check --unsigned-overflow-check --unwinding-assertions --trace /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/gotos/HTTPClient_AddRangeHeader_harness.goto 2>&1 | tee  /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/logs/result.txt; if [ ${PIPESTATUS[0]} -ne 10 ]; then exit ${PIPESTATUS[0]}; fi
+CBMC version 5.12 (cbmc-5.12.5) 64-bit x86_64 macos
+Reading GOTO program from file
+Reading: /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/gotos/HTTPClient_AddRangeHeader_harness.goto
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Running with 8 object bits, 56 offset bits (user-specified)
+Starting Bounded Model Checking
+Not unwinding loop __CPROVER_file_local_http_client_c_convertInt32ToAscii.0 iteration 1 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c line 1102 function convertInt32ToAscii thread 0
+Not unwinding loop __CPROVER_file_local_http_client_c_convertInt32ToAscii.0 iteration 1 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c line 1102 function convertInt32ToAscii thread 0
+Unwinding loop strncmp.0 iteration 1 file <builtin-library-strncmp> line 42 function strncmp thread 0
+Unwinding loop strncmp.0 iteration 2 file <builtin-library-strncmp> line 42 function strncmp thread 0
+Unwinding loop strncmp.0 iteration 3 file <builtin-library-strncmp> line 42 function strncmp thread 0
+size of program expression: 1574 steps
+simple slicing removed 298 assignments
+Generated 315 VCC(s), 239 remaining after simplification
+Passing problem to propositional reduction
+converting SSA
+Running propositional reduction
+Post-processing
+Solving with MiniSAT 2.2.1 with simplifier
+71789 variables, 323647 clauses
+SAT checker: instance is SATISFIABLE
+Runtime decision procedure: 0.570677s
+Building error trace
+Running propositional reduction
+Solving with MiniSAT 2.2.1 with simplifier
+71789 variables, 216438 clauses
+SAT checker: instance is SATISFIABLE
+Runtime decision procedure: 0.0237841s
+Building error trace
+Running propositional reduction
+Solving with MiniSAT 2.2.1 with simplifier
+71789 variables, 216021 clauses
+SAT checker: instance is UNSATISFIABLE
+Runtime decision procedure: 1.73132s
+
+** Results:
+/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function allocateHttpRequestHeaders
+[allocateHttpRequestHeaders.overflow.1] line 22 arithmetic overflow on signed + in 8 + 1: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.1] line 22 dereference failure: pointer invalid in pRequestHeaders->bufferLen: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.2] line 22 dereference failure: pointer NULL in pRequestHeaders->bufferLen: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.3] line 22 dereference failure: deallocated dynamic object in pRequestHeaders->bufferLen: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.4] line 22 dereference failure: dead object in pRequestHeaders->bufferLen: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.5] line 22 dereference failure: pointer outside dynamic object bounds in pRequestHeaders->bufferLen: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.6] line 22 dereference failure: pointer outside object bounds in pRequestHeaders->bufferLen: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.7] line 22 dereference failure: invalid integer address in pRequestHeaders->bufferLen: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.8] line 23 dereference failure: pointer invalid in pRequestHeaders->pBuffer: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.9] line 23 dereference failure: pointer NULL in pRequestHeaders->pBuffer: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.10] line 23 dereference failure: deallocated dynamic object in pRequestHeaders->pBuffer: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.11] line 23 dereference failure: dead object in pRequestHeaders->pBuffer: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.12] line 23 dereference failure: pointer outside dynamic object bounds in pRequestHeaders->pBuffer: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.13] line 23 dereference failure: pointer outside object bounds in pRequestHeaders->pBuffer: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.14] line 23 dereference failure: invalid integer address in pRequestHeaders->pBuffer: SUCCESS
+
+/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function isValidHttpRequestHeaders
+[isValidHttpRequestHeaders.overflow.1] line 35 arithmetic overflow on signed + in 8 + 1: SUCCESS
+[isValidHttpRequestHeaders.pointer_dereference.1] line 35 dereference failure: pointer invalid in pRequestHeaders->bufferLen: SUCCESS
+[isValidHttpRequestHeaders.pointer_dereference.2] line 35 dereference failure: pointer NULL in pRequestHeaders->bufferLen: SUCCESS
+[isValidHttpRequestHeaders.pointer_dereference.3] line 35 dereference failure: deallocated dynamic object in pRequestHeaders->bufferLen: SUCCESS
+[isValidHttpRequestHeaders.pointer_dereference.4] line 35 dereference failure: dead object in pRequestHeaders->bufferLen: SUCCESS
+[isValidHttpRequestHeaders.pointer_dereference.5] line 35 dereference failure: pointer outside dynamic object bounds in pRequestHeaders->bufferLen: SUCCESS
+[isValidHttpRequestHeaders.pointer_dereference.6] line 35 dereference failure: pointer outside object bounds in pRequestHeaders->bufferLen: SUCCESS
+[isValidHttpRequestHeaders.pointer_dereference.7] line 35 dereference failure: invalid integer address in pRequestHeaders->bufferLen: SUCCESS
+[isValidHttpRequestHeaders.pointer_dereference.8] line 36 dereference failure: pointer outside dynamic object bounds in pRequestHeaders->headersLen: SUCCESS
+[isValidHttpRequestHeaders.pointer_dereference.9] line 36 dereference failure: pointer outside object bounds in pRequestHeaders->headersLen: SUCCESS
+[isValidHttpRequestHeaders.pointer_dereference.10] line 36 dereference failure: invalid integer address in pRequestHeaders->headersLen: SUCCESS
+
+/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function mallocCanFail
+[mallocCanFail.assertion.1] line 9 mallocCanFail size is too big: SUCCESS
+[mallocCanFail.overflow.1] line 9 arithmetic overflow on signed + in 8 + 1: SUCCESS
+
+/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader
+[HTTPClient_AddRangeHeader.pointer_dereference.1] line 1443 dereference failure: pointer invalid in pRequestHeaders->pBuffer: SUCCESS
+[HTTPClient_AddRangeHeader.pointer_dereference.2] line 1443 dereference failure: pointer NULL in pRequestHeaders->pBuffer: SUCCESS
+[HTTPClient_AddRangeHeader.pointer_dereference.3] line 1443 dereference failure: deallocated dynamic object in pRequestHeaders->pBuffer: SUCCESS
+[HTTPClient_AddRangeHeader.pointer_dereference.4] line 1443 dereference failure: dead object in pRequestHeaders->pBuffer: SUCCESS
+[HTTPClient_AddRangeHeader.pointer_dereference.5] line 1443 dereference failure: pointer outside dynamic object bounds in pRequestHeaders->pBuffer: SUCCESS
+[HTTPClient_AddRangeHeader.pointer_dereference.6] line 1443 dereference failure: pointer outside object bounds in pRequestHeaders->pBuffer: SUCCESS
+[HTTPClient_AddRangeHeader.pointer_dereference.7] line 1443 dereference failure: invalid integer address in pRequestHeaders->pBuffer: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.1] line 1477 arithmetic overflow on unsigned - in sizeof(char [7l]) /*7ul*/  - (unsigned long int)1u: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.2] line 1477 arithmetic overflow on unsigned - in sizeof(char [7l]) /*7ul*/  - (unsigned long int)1u: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.3] line 1477 arithmetic overflow on unsigned - in sizeof(char [7l]) /*7ul*/  - (unsigned long int)1u: SUCCESS
+[HTTPClient_AddRangeHeader.precondition_instance.1] line 1477 memcpy src/dst overlap: SUCCESS
+[HTTPClient_AddRangeHeader.precondition_instance.2] line 1477 memcpy source region readable: SUCCESS
+[HTTPClient_AddRangeHeader.precondition_instance.3] line 1477 memcpy destination region writeable: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.4] line 1480 arithmetic overflow on unsigned - in sizeof(char [7l]) /*7ul*/  - (unsigned long int)1u: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.5] line 1480 arithmetic overflow on unsigned + in rangeValueLength + (sizeof(char [7l]) /*7ul*/  - (unsigned long int)1u): SUCCESS
+[HTTPClient_AddRangeHeader.overflow.9] line 1483 arithmetic overflow on unsigned + in rangeValueLength + (unsigned long int)return_value_convertInt32ToAscii: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.6] line 1484 arithmetic overflow on unsigned to signed type conversion in (signed long int)rangeValueLength: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.7] line 1484 pointer arithmetic overflow on + in rangeValueBuffer + (signed long int)rangeValueLength: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.8] line 1485 arithmetic overflow on unsigned - in sizeof(char [27l]) /*27ul*/  - rangeValueLength: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.10] line 1493 arithmetic overflow on unsigned to signed type conversion in (signed long int)rangeValueLength: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.11] line 1493 pointer arithmetic overflow on + in rangeValueBuffer + (signed long int)rangeValueLength: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.12] line 1493 arithmetic overflow on unsigned to signed type conversion in (signed long int)rangeValueLength: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.13] line 1493 pointer arithmetic overflow on + in rangeValueBuffer + (signed long int)rangeValueLength: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.14] line 1493 arithmetic overflow on unsigned - in sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.15] line 1493 arithmetic overflow on unsigned to signed type conversion in (signed long int)rangeValueLength: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.16] line 1493 pointer arithmetic overflow on + in rangeValueBuffer + (signed long int)rangeValueLength: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.17] line 1493 arithmetic overflow on unsigned - in sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.18] line 1493 arithmetic overflow on unsigned - in sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u: SUCCESS
+[HTTPClient_AddRangeHeader.precondition_instance.4] line 1493 memcpy src/dst overlap: SUCCESS
+[HTTPClient_AddRangeHeader.precondition_instance.5] line 1493 memcpy source region readable: SUCCESS
+[HTTPClient_AddRangeHeader.precondition_instance.6] line 1493 memcpy destination region writeable: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.19] line 1496 arithmetic overflow on unsigned - in sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.20] line 1496 arithmetic overflow on unsigned + in rangeValueLength + (sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u): SUCCESS
+[HTTPClient_AddRangeHeader.overflow.24] line 1499 arithmetic overflow on unsigned + in rangeValueLength + (unsigned long int)return_value_convertInt32ToAscii$0: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.21] line 1500 arithmetic overflow on unsigned to signed type conversion in (signed long int)rangeValueLength: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.22] line 1500 pointer arithmetic overflow on + in rangeValueBuffer + (signed long int)rangeValueLength: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.23] line 1501 arithmetic overflow on unsigned - in sizeof(char [27l]) /*27ul*/  - rangeValueLength: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.25] line 1507 arithmetic overflow on unsigned to signed type conversion in (signed long int)rangeValueLength: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.26] line 1507 pointer arithmetic overflow on + in rangeValueBuffer + (signed long int)rangeValueLength: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.27] line 1507 arithmetic overflow on unsigned to signed type conversion in (signed long int)rangeValueLength: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.28] line 1507 pointer arithmetic overflow on + in rangeValueBuffer + (signed long int)rangeValueLength: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.29] line 1507 arithmetic overflow on unsigned - in sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.30] line 1507 arithmetic overflow on unsigned to signed type conversion in (signed long int)rangeValueLength: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.31] line 1507 pointer arithmetic overflow on + in rangeValueBuffer + (signed long int)rangeValueLength: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.32] line 1507 arithmetic overflow on unsigned - in sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.33] line 1507 arithmetic overflow on unsigned - in sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u: SUCCESS
+[HTTPClient_AddRangeHeader.precondition_instance.7] line 1507 memcpy src/dst overlap: SUCCESS
+[HTTPClient_AddRangeHeader.precondition_instance.8] line 1507 memcpy source region readable: SUCCESS
+[HTTPClient_AddRangeHeader.precondition_instance.9] line 1507 memcpy destination region writeable: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.34] line 1510 arithmetic overflow on unsigned - in sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u: SUCCESS
+[HTTPClient_AddRangeHeader.overflow.35] line 1510 arithmetic overflow on unsigned + in rangeValueLength + (sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u): SUCCESS
+[HTTPClient_AddRangeHeader.overflow.36] line 1520 arithmetic overflow on unsigned - in sizeof(char [6l]) /*6ul*/  - (unsigned long int)1u: SUCCESS
+
+/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function addHeader
+[addHeader.overflow.1] line 1125 arithmetic overflow on unsigned to signed type conversion in (signed long int)pRequestHeaders->headersLen: SUCCESS
+[addHeader.overflow.2] line 1125 pointer arithmetic overflow on + in pRequestHeaders->pBuffer + (signed long int)pRequestHeaders->headersLen: SUCCESS
+[addHeader.pointer_dereference.1] line 1125 dereference failure: pointer invalid in pRequestHeaders->pBuffer: SUCCESS
+[addHeader.pointer_dereference.2] line 1125 dereference failure: pointer NULL in pRequestHeaders->pBuffer: SUCCESS
+[addHeader.pointer_dereference.3] line 1125 dereference failure: deallocated dynamic object in pRequestHeaders->pBuffer: SUCCESS
+[addHeader.pointer_dereference.4] line 1125 dereference failure: dead object in pRequestHeaders->pBuffer: SUCCESS
+[addHeader.pointer_dereference.5] line 1125 dereference failure: pointer outside dynamic object bounds in pRequestHeaders->pBuffer: SUCCESS
+[addHeader.pointer_dereference.6] line 1125 dereference failure: pointer outside object bounds in pRequestHeaders->pBuffer: SUCCESS
+[addHeader.pointer_dereference.7] line 1125 dereference failure: invalid integer address in pRequestHeaders->pBuffer: SUCCESS
+[addHeader.pointer_dereference.8] line 1125 dereference failure: pointer NULL in pRequestHeaders->headersLen: SUCCESS
+[addHeader.pointer_dereference.9] line 1125 dereference failure: pointer outside dynamic object bounds in pRequestHeaders->headersLen: SUCCESS
+[addHeader.pointer_dereference.10] line 1125 dereference failure: pointer outside object bounds in pRequestHeaders->headersLen: SUCCESS
+[addHeader.pointer_dereference.11] line 1125 dereference failure: invalid integer address in pRequestHeaders->headersLen: SUCCESS
+[addHeader.assertion.1] line 1129 assertion pRequestHeaders != NULL: SUCCESS
+[addHeader.assertion.2] line 1130 assertion pRequestHeaders->pBuffer != NULL: SUCCESS
+[addHeader.assertion.3] line 1131 assertion pField != NULL: SUCCESS
+[addHeader.assertion.4] line 1132 assertion pValue != NULL: SUCCESS
+[addHeader.assertion.5] line 1133 assertion fieldLen != 0u: SUCCESS
+[addHeader.assertion.6] line 1134 assertion valueLen != 0u: SUCCESS
+[addHeader.overflow.3] line 1141 arithmetic overflow on unsigned - in sizeof(char [5l]) /*5ul*/  - (unsigned long int)1u: SUCCESS
+[addHeader.overflow.4] line 1142 pointer arithmetic overflow on - in (char *)pBufferCur - (signed long int)(sizeof(char [5l]) /*5ul*/  - (unsigned long int)1u): SUCCESS
+[addHeader.overflow.5] line 1145 arithmetic overflow on unsigned - in sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u: SUCCESS
+[addHeader.overflow.6] line 1145 arithmetic overflow on unsigned - in backtrackHeaderLen - (sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u): SUCCESS
+[addHeader.overflow.7] line 1146 pointer arithmetic overflow on - in pBufferCur - (signed long int)(sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u): SUCCESS
+[addHeader.overflow.8] line 1150 arithmetic overflow on unsigned - in sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u: SUCCESS
+[addHeader.overflow.9] line 1150 arithmetic overflow on unsigned + in fieldLen + (sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u): SUCCESS
+[addHeader.overflow.10] line 1150 arithmetic overflow on unsigned + in fieldLen + (sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u) + valueLen: SUCCESS
+[addHeader.overflow.11] line 1150 arithmetic overflow on unsigned + in fieldLen + (sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u) + valueLen + (sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u): SUCCESS
+[addHeader.overflow.12] line 1151 arithmetic overflow on unsigned + in fieldLen + (sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u) + valueLen + (sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u) + (sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u): SUCCESS
+[addHeader.overflow.13] line 1156 arithmetic overflow on unsigned + in backtrackHeaderLen + toAddLen: SUCCESS
+[addHeader.pointer_dereference.12] line 1156 dereference failure: pointer invalid in pRequestHeaders->bufferLen: SUCCESS
+[addHeader.pointer_dereference.13] line 1156 dereference failure: pointer NULL in pRequestHeaders->bufferLen: SUCCESS
+[addHeader.pointer_dereference.14] line 1156 dereference failure: deallocated dynamic object in pRequestHeaders->bufferLen: SUCCESS
+[addHeader.pointer_dereference.15] line 1156 dereference failure: dead object in pRequestHeaders->bufferLen: SUCCESS
+[addHeader.pointer_dereference.16] line 1156 dereference failure: pointer outside dynamic object bounds in pRequestHeaders->bufferLen: SUCCESS
+[addHeader.pointer_dereference.17] line 1156 dereference failure: pointer outside object bounds in pRequestHeaders->bufferLen: SUCCESS
+[addHeader.pointer_dereference.18] line 1156 dereference failure: invalid integer address in pRequestHeaders->bufferLen: SUCCESS
+[addHeader.overflow.14] line 1161 arithmetic overflow on unsigned to signed type conversion in (signed long int)fieldLen: SUCCESS
+[addHeader.overflow.15] line 1161 arithmetic overflow on unsigned to signed type conversion in (signed long int)fieldLen: SUCCESS
+[addHeader.precondition_instance.1] line 1161 memcpy src/dst overlap: SUCCESS
+[addHeader.precondition_instance.2] line 1161 memcpy source region readable: SUCCESS
+[addHeader.precondition_instance.3] line 1161 memcpy destination region writeable: SUCCESS
+[addHeader.overflow.16] line 1162 arithmetic overflow on unsigned to signed type conversion in (signed long int)fieldLen: SUCCESS
+[addHeader.overflow.17] line 1162 pointer arithmetic overflow on + in pBufferCur + (signed long int)fieldLen: SUCCESS
+[addHeader.overflow.18] line 1165 arithmetic overflow on unsigned - in sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u: SUCCESS
+[addHeader.overflow.19] line 1165 arithmetic overflow on unsigned - in sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u: SUCCESS
+[addHeader.overflow.20] line 1165 arithmetic overflow on unsigned - in sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u: SUCCESS
+[addHeader.precondition_instance.4] line 1165 memcpy src/dst overlap: SUCCESS
+[addHeader.precondition_instance.5] line 1165 memcpy source region readable: SUCCESS
+[addHeader.precondition_instance.6] line 1165 memcpy destination region writeable: SUCCESS
+[addHeader.overflow.21] line 1168 arithmetic overflow on unsigned - in sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u: SUCCESS
+[addHeader.overflow.22] line 1168 pointer arithmetic overflow on + in pBufferCur + (signed long int)(sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u): SUCCESS
+[addHeader.overflow.23] line 1171 arithmetic overflow on unsigned to signed type conversion in (signed long int)valueLen: SUCCESS
+[addHeader.overflow.24] line 1171 arithmetic overflow on unsigned to signed type conversion in (signed long int)valueLen: SUCCESS
+[addHeader.precondition_instance.7] line 1171 memcpy src/dst overlap: SUCCESS
+[addHeader.precondition_instance.8] line 1171 memcpy source region readable: SUCCESS
+[addHeader.precondition_instance.9] line 1171 memcpy destination region writeable: SUCCESS
+[addHeader.overflow.25] line 1172 arithmetic overflow on unsigned to signed type conversion in (signed long int)valueLen: SUCCESS
+[addHeader.overflow.26] line 1172 pointer arithmetic overflow on + in pBufferCur + (signed long int)valueLen: SUCCESS
+[addHeader.overflow.27] line 1175 arithmetic overflow on unsigned - in sizeof(char [5l]) /*5ul*/  - (unsigned long int)1u: SUCCESS
+[addHeader.overflow.28] line 1175 arithmetic overflow on unsigned - in sizeof(char [5l]) /*5ul*/  - (unsigned long int)1u: SUCCESS
+[addHeader.overflow.29] line 1175 arithmetic overflow on unsigned - in sizeof(char [5l]) /*5ul*/  - (unsigned long int)1u: SUCCESS
+[addHeader.precondition_instance.10] line 1175 memcpy src/dst overlap: SUCCESS
+[addHeader.precondition_instance.11] line 1175 memcpy source region readable: SUCCESS
+[addHeader.precondition_instance.12] line 1175 memcpy destination region writeable: SUCCESS
+[addHeader.overflow.30] line 1180 arithmetic overflow on unsigned + in backtrackHeaderLen + toAddLen: SUCCESS
+[addHeader.pointer_dereference.19] line 1180 dereference failure: pointer invalid in pRequestHeaders->headersLen: SUCCESS
+[addHeader.pointer_dereference.20] line 1180 dereference failure: pointer NULL in pRequestHeaders->headersLen: SUCCESS
+[addHeader.pointer_dereference.21] line 1180 dereference failure: deallocated dynamic object in pRequestHeaders->headersLen: SUCCESS
+[addHeader.pointer_dereference.22] line 1180 dereference failure: dead object in pRequestHeaders->headersLen: SUCCESS
+[addHeader.pointer_dereference.23] line 1180 dereference failure: pointer outside dynamic object bounds in pRequestHeaders->headersLen: SUCCESS
+[addHeader.pointer_dereference.24] line 1180 dereference failure: pointer outside object bounds in pRequestHeaders->headersLen: SUCCESS
+[addHeader.pointer_dereference.25] line 1180 dereference failure: invalid integer address in pRequestHeaders->headersLen: SUCCESS
+
+/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii
+[convertInt32ToAscii.assertion.1] line 1081 assertion pBuffer != NULL: SUCCESS
+[convertInt32ToAscii.assertion.2] line 1082 assertion bufferLength >= MAX_INT32_NO_OF_DECIMAL_DIGITS: SUCCESS
+[convertInt32ToAscii.pointer_dereference.1] line 1090 dereference failure: pointer invalid in *pBuffer: SUCCESS
+[convertInt32ToAscii.pointer_dereference.2] line 1090 dereference failure: pointer NULL in *pBuffer: SUCCESS
+[convertInt32ToAscii.pointer_dereference.3] line 1090 dereference failure: deallocated dynamic object in *pBuffer: SUCCESS
+[convertInt32ToAscii.pointer_dereference.4] line 1090 dereference failure: dead object in *pBuffer: SUCCESS
+[convertInt32ToAscii.pointer_dereference.5] line 1090 dereference failure: pointer outside dynamic object bounds in *pBuffer: SUCCESS
+[convertInt32ToAscii.pointer_dereference.6] line 1090 dereference failure: pointer outside object bounds in *pBuffer: SUCCESS
+[convertInt32ToAscii.pointer_dereference.7] line 1090 dereference failure: invalid integer address in *pBuffer: SUCCESS
+[convertInt32ToAscii.overflow.1] line 1093 arithmetic overflow on signed * in value * -1: FAILURE
+[convertInt32ToAscii.overflow.2] line 1099 arithmetic overflow on signed + in (signed int)isNegative + (signed int)numOfDigits: SUCCESS
+[convertInt32ToAscii.overflow.3] line 1099 pointer arithmetic overflow on + in pBuffer + (signed long int)((signed int)isNegative + (signed int)numOfDigits): SUCCESS
+[convertInt32ToAscii.overflow.4] line 1099 arithmetic overflow on signed + in absoluteValue % 10 + 48: SUCCESS
+[convertInt32ToAscii.overflow.5] line 1099 arithmetic overflow on signed type conversion in (char)(absoluteValue % 10 + 48): SUCCESS
+[convertInt32ToAscii.pointer_dereference.8] line 1099 dereference failure: pointer invalid in pBuffer[(signed long int)((signed int)isNegative + (signed int)numOfDigits)]: SUCCESS
+[convertInt32ToAscii.pointer_dereference.9] line 1099 dereference failure: pointer NULL in pBuffer[(signed long int)((signed int)isNegative + (signed int)numOfDigits)]: SUCCESS
+[convertInt32ToAscii.pointer_dereference.10] line 1099 dereference failure: deallocated dynamic object in pBuffer[(signed long int)((signed int)isNegative + (signed int)numOfDigits)]: SUCCESS
+[convertInt32ToAscii.pointer_dereference.11] line 1099 dereference failure: dead object in pBuffer[(signed long int)((signed int)isNegative + (signed int)numOfDigits)]: SUCCESS
+[convertInt32ToAscii.pointer_dereference.12] line 1099 dereference failure: pointer outside dynamic object bounds in pBuffer[(signed long int)((signed int)isNegative + (signed int)numOfDigits)]: SUCCESS
+[convertInt32ToAscii.pointer_dereference.13] line 1099 dereference failure: pointer outside object bounds in pBuffer[(signed long int)((signed int)isNegative + (signed int)numOfDigits)]: SUCCESS
+[convertInt32ToAscii.pointer_dereference.14] line 1099 dereference failure: invalid integer address in pBuffer[(signed long int)((signed int)isNegative + (signed int)numOfDigits)]: SUCCESS
+[convertInt32ToAscii.overflow.6] line 1100 arithmetic overflow on unsigned + in numOfDigits + 1: SUCCESS
+[convertInt32ToAscii.unwind.0] line 1102 unwinding assertion loop 0: FAILURE
+[convertInt32ToAscii.overflow.19] line 1106 arithmetic overflow on unsigned + in index + 1: SUCCESS
+[convertInt32ToAscii.overflow.7] line 1108 arithmetic overflow on signed + in (signed int)isNegative + (signed int)index: SUCCESS
+[convertInt32ToAscii.overflow.8] line 1108 pointer arithmetic overflow on + in pBuffer + (signed long int)((signed int)isNegative + (signed int)index): SUCCESS
+[convertInt32ToAscii.pointer_dereference.15] line 1108 dereference failure: pointer invalid in pBuffer[(signed long int)((signed int)isNegative + (signed int)index)]: SUCCESS
+[convertInt32ToAscii.pointer_dereference.16] line 1108 dereference failure: pointer NULL in pBuffer[(signed long int)((signed int)isNegative + (signed int)index)]: SUCCESS
+[convertInt32ToAscii.pointer_dereference.17] line 1108 dereference failure: deallocated dynamic object in pBuffer[(signed long int)((signed int)isNegative + (signed int)index)]: SUCCESS
+[convertInt32ToAscii.pointer_dereference.18] line 1108 dereference failure: dead object in pBuffer[(signed long int)((signed int)isNegative + (signed int)index)]: SUCCESS
+[convertInt32ToAscii.pointer_dereference.19] line 1108 dereference failure: pointer outside dynamic object bounds in pBuffer[(signed long int)((signed int)isNegative + (signed int)index)]: SUCCESS
+[convertInt32ToAscii.pointer_dereference.20] line 1108 dereference failure: pointer outside object bounds in pBuffer[(signed long int)((signed int)isNegative + (signed int)index)]: SUCCESS
+[convertInt32ToAscii.pointer_dereference.21] line 1108 dereference failure: invalid integer address in pBuffer[(signed long int)((signed int)isNegative + (signed int)index)]: SUCCESS
+[convertInt32ToAscii.overflow.9] line 1109 arithmetic overflow on signed + in (signed int)isNegative + (signed int)numOfDigits: SUCCESS
+[convertInt32ToAscii.overflow.10] line 1109 arithmetic overflow on signed - in ((signed int)isNegative + (signed int)numOfDigits) - (signed int)index: SUCCESS
+[convertInt32ToAscii.overflow.11] line 1109 arithmetic overflow on signed to unsigned type conversion in (unsigned int)(((signed int)isNegative + (signed int)numOfDigits) - (signed int)index): SUCCESS
+[convertInt32ToAscii.overflow.12] line 1109 arithmetic overflow on unsigned - in (unsigned int)(((signed int)isNegative + (signed int)numOfDigits) - (signed int)index) - 1u: SUCCESS
+[convertInt32ToAscii.overflow.13] line 1109 pointer arithmetic overflow on + in pBuffer + (signed long int)((unsigned int)(((signed int)isNegative + (signed int)numOfDigits) - (signed int)index) - 1u): SUCCESS
+[convertInt32ToAscii.pointer_dereference.22] line 1109 dereference failure: pointer outside dynamic object bounds in pBuffer[(signed long int)((unsigned int)(((signed int)isNegative + (signed int)numOfDigits) - (signed int)index) - 1u)]: SUCCESS
+[convertInt32ToAscii.pointer_dereference.23] line 1109 dereference failure: pointer outside object bounds in pBuffer[(signed long int)((unsigned int)(((signed int)isNegative + (signed int)numOfDigits) - (signed int)index) - 1u)]: SUCCESS
+[convertInt32ToAscii.pointer_dereference.24] line 1109 dereference failure: invalid integer address in pBuffer[(signed long int)((unsigned int)(((signed int)isNegative + (signed int)numOfDigits) - (signed int)index) - 1u)]: SUCCESS
+[convertInt32ToAscii.overflow.14] line 1110 arithmetic overflow on signed + in (signed int)isNegative + (signed int)numOfDigits: SUCCESS
+[convertInt32ToAscii.overflow.15] line 1110 arithmetic overflow on signed - in ((signed int)isNegative + (signed int)numOfDigits) - (signed int)index: SUCCESS
+[convertInt32ToAscii.overflow.16] line 1110 arithmetic overflow on signed to unsigned type conversion in (unsigned int)(((signed int)isNegative + (signed int)numOfDigits) - (signed int)index): SUCCESS
+[convertInt32ToAscii.overflow.17] line 1110 arithmetic overflow on unsigned - in (unsigned int)(((signed int)isNegative + (signed int)numOfDigits) - (signed int)index) - 1u: SUCCESS
+[convertInt32ToAscii.overflow.18] line 1110 pointer arithmetic overflow on + in pBuffer + (signed long int)((unsigned int)(((signed int)isNegative + (signed int)numOfDigits) - (signed int)index) - 1u): SUCCESS
+[convertInt32ToAscii.pointer_dereference.25] line 1110 dereference failure: pointer invalid in pBuffer[(signed long int)((unsigned int)(((signed int)isNegative + (signed int)numOfDigits) - (signed int)index) - 1u)]: SUCCESS
+[convertInt32ToAscii.pointer_dereference.26] line 1110 dereference failure: pointer NULL in pBuffer[(signed long int)((unsigned int)(((signed int)isNegative + (signed int)numOfDigits) - (signed int)index) - 1u)]: SUCCESS
+[convertInt32ToAscii.pointer_dereference.27] line 1110 dereference failure: deallocated dynamic object in pBuffer[(signed long int)((unsigned int)(((signed int)isNegative + (signed int)numOfDigits) - (signed int)index) - 1u)]: SUCCESS
+[convertInt32ToAscii.pointer_dereference.28] line 1110 dereference failure: dead object in pBuffer[(signed long int)((unsigned int)(((signed int)isNegative + (signed int)numOfDigits) - (signed int)index) - 1u)]: SUCCESS
+[convertInt32ToAscii.pointer_dereference.29] line 1110 dereference failure: pointer outside dynamic object bounds in pBuffer[(signed long int)((unsigned int)(((signed int)isNegative + (signed int)numOfDigits) - (signed int)index) - 1u)]: SUCCESS
+[convertInt32ToAscii.pointer_dereference.30] line 1110 dereference failure: pointer outside object bounds in pBuffer[(signed long int)((unsigned int)(((signed int)isNegative + (signed int)numOfDigits) - (signed int)index) - 1u)]: SUCCESS
+[convertInt32ToAscii.pointer_dereference.31] line 1110 dereference failure: invalid integer address in pBuffer[(signed long int)((unsigned int)(((signed int)isNegative + (signed int)numOfDigits) - (signed int)index) - 1u)]: SUCCESS
+[convertInt32ToAscii.overflow.20] line 1113 arithmetic overflow on signed + in (signed int)isNegative + (signed int)numOfDigits: SUCCESS
+[convertInt32ToAscii.overflow.21] line 1113 arithmetic overflow on signed to unsigned type conversion in (uint8_t)((signed int)isNegative + (signed int)numOfDigits): SUCCESS
+
+<builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk
+[__builtin___memcpy_chk.overflow.1] line 26 pointer arithmetic overflow on + in (const char *)(void *)rangeValueBuffer + (signed long int)(sizeof(char [7l]) /*7ul*/  - (unsigned long int)1u): SUCCESS
+[__builtin___memcpy_chk.overflow.3] line 26 pointer arithmetic overflow on + in (const char *)(void *)(rangeValueBuffer + (signed long int)rangeValueLength) + (signed long int)(sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u): SUCCESS
+[__builtin___memcpy_chk.overflow.5] line 26 pointer arithmetic overflow on + in (const char *)(void *)(rangeValueBuffer + (signed long int)rangeValueLength) + (signed long int)(sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u): SUCCESS
+[__builtin___memcpy_chk.overflow.7] line 26 pointer arithmetic overflow on + in (const char *)(void *)pBufferCur + (signed long int)fieldLen: SUCCESS
+[__builtin___memcpy_chk.overflow.9] line 26 pointer arithmetic overflow on + in (const char *)(void *)pBufferCur + (signed long int)(sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u): SUCCESS
+[__builtin___memcpy_chk.overflow.11] line 26 pointer arithmetic overflow on + in (const char *)(void *)pBufferCur + (signed long int)valueLen: SUCCESS
+[__builtin___memcpy_chk.overflow.13] line 26 pointer arithmetic overflow on + in (const char *)(void *)pBufferCur + (signed long int)(sizeof(char [5l]) /*5ul*/  - (unsigned long int)1u): SUCCESS
+[__builtin___memcpy_chk.pointer.1] line 26 same object violation in (const char *)(const void *)"bytes=" >= (const char *)(void *)rangeValueBuffer + (signed long int)(sizeof(char [7l]) /*7ul*/  - (unsigned long int)1u): SUCCESS
+[__builtin___memcpy_chk.pointer.3] line 26 same object violation in (const char *)(const void *)"-" >= (const char *)(void *)(rangeValueBuffer + (signed long int)rangeValueLength) + (signed long int)(sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u): SUCCESS
+[__builtin___memcpy_chk.pointer.5] line 26 same object violation in (const char *)(const void *)"-" >= (const char *)(void *)(rangeValueBuffer + (signed long int)rangeValueLength) + (signed long int)(sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u): SUCCESS
+[__builtin___memcpy_chk.pointer.7] line 26 same object violation in (const char *)(const void *)pField >= (const char *)(void *)pBufferCur + (signed long int)fieldLen: SUCCESS
+[__builtin___memcpy_chk.pointer.9] line 26 same object violation in (const char *)(const void *)": " >= (const char *)(void *)pBufferCur + (signed long int)(sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u): SUCCESS
+[__builtin___memcpy_chk.pointer.11] line 26 same object violation in (const char *)(const void *)pValue >= (const char *)(void *)pBufferCur + (signed long int)valueLen: SUCCESS
+[__builtin___memcpy_chk.pointer.13] line 26 same object violation in (const char *)(const void *)"\r\n\r\n" >= (const char *)(void *)pBufferCur + (signed long int)(sizeof(char [5l]) /*5ul*/  - (unsigned long int)1u): SUCCESS
+[__builtin___memcpy_chk.overflow.2] line 27 pointer arithmetic overflow on + in (const char *)(const void *)"bytes=" + (signed long int)(sizeof(char [7l]) /*7ul*/  - (unsigned long int)1u): SUCCESS
+[__builtin___memcpy_chk.overflow.4] line 27 pointer arithmetic overflow on + in (const char *)(const void *)"-" + (signed long int)(sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u): SUCCESS
+[__builtin___memcpy_chk.overflow.6] line 27 pointer arithmetic overflow on + in (const char *)(const void *)"-" + (signed long int)(sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u): SUCCESS
+[__builtin___memcpy_chk.overflow.8] line 27 pointer arithmetic overflow on + in (const char *)(const void *)pField + (signed long int)fieldLen: SUCCESS
+[__builtin___memcpy_chk.overflow.10] line 27 pointer arithmetic overflow on + in (const char *)(const void *)": " + (signed long int)(sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u): SUCCESS
+[__builtin___memcpy_chk.overflow.12] line 27 pointer arithmetic overflow on + in (const char *)(const void *)pValue + (signed long int)valueLen: SUCCESS
+[__builtin___memcpy_chk.overflow.14] line 27 pointer arithmetic overflow on + in (const char *)(const void *)"\r\n\r\n" + (signed long int)(sizeof(char [5l]) /*5ul*/  - (unsigned long int)1u): SUCCESS
+[__builtin___memcpy_chk.pointer.2] line 27 same object violation in (const char *)(void *)rangeValueBuffer >= (const char *)(const void *)"bytes=" + (signed long int)(sizeof(char [7l]) /*7ul*/  - (unsigned long int)1u): SUCCESS
+[__builtin___memcpy_chk.pointer.4] line 27 same object violation in (const char *)(void *)(rangeValueBuffer + (signed long int)rangeValueLength) >= (const char *)(const void *)"-" + (signed long int)(sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u): SUCCESS
+[__builtin___memcpy_chk.pointer.6] line 27 same object violation in (const char *)(void *)(rangeValueBuffer + (signed long int)rangeValueLength) >= (const char *)(const void *)"-" + (signed long int)(sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u): SUCCESS
+[__builtin___memcpy_chk.pointer.8] line 27 same object violation in (const char *)(void *)pBufferCur >= (const char *)(const void *)pField + (signed long int)fieldLen: SUCCESS
+[__builtin___memcpy_chk.pointer.10] line 27 same object violation in (const char *)(void *)pBufferCur >= (const char *)(const void *)": " + (signed long int)(sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u): SUCCESS
+[__builtin___memcpy_chk.pointer.12] line 27 same object violation in (const char *)(void *)pBufferCur >= (const char *)(const void *)pValue + (signed long int)valueLen: SUCCESS
+[__builtin___memcpy_chk.pointer.14] line 27 same object violation in (const char *)(void *)pBufferCur >= (const char *)(const void *)"\r\n\r\n" + (signed long int)(sizeof(char [5l]) /*5ul*/  - (unsigned long int)1u): SUCCESS
+[__builtin___memcpy_chk.overflow.15] line 38 arithmetic overflow on unsigned to signed type conversion in (signed long int)n: SUCCESS
+[__builtin___memcpy_chk.overflow.16] line 38 arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(signed long int)n: SUCCESS
+
+<builtin-library-malloc> function malloc
+[malloc.assertion.1] line 26 max allocation size exceeded: SUCCESS
+[malloc.assertion.2] line 31 max allocation may fail: SUCCESS
+
+<builtin-library-strncmp> function strncmp
+[strncmp.overflow.1] line 28 pointer arithmetic overflow on + in s1 + (signed long int)i: SUCCESS
+[strncmp.pointer_dereference.1] line 28 dereference failure: pointer invalid in s1[(signed long int)i]: SUCCESS
+[strncmp.pointer_dereference.2] line 28 dereference failure: pointer NULL in s1[(signed long int)i]: SUCCESS
+[strncmp.pointer_dereference.3] line 28 dereference failure: deallocated dynamic object in s1[(signed long int)i]: SUCCESS
+[strncmp.pointer_dereference.4] line 28 dereference failure: dead object in s1[(signed long int)i]: SUCCESS
+[strncmp.pointer_dereference.5] line 28 dereference failure: pointer outside dynamic object bounds in s1[(signed long int)i]: FAILURE
+[strncmp.pointer_dereference.6] line 28 dereference failure: pointer outside object bounds in s1[(signed long int)i]: SUCCESS
+[strncmp.pointer_dereference.7] line 28 dereference failure: invalid integer address in s1[(signed long int)i]: SUCCESS
+[strncmp.overflow.2] line 29 pointer arithmetic overflow on + in s2 + (signed long int)i: SUCCESS
+[strncmp.pointer_dereference.8] line 29 dereference failure: pointer invalid in s2[(signed long int)i]: SUCCESS
+[strncmp.pointer_dereference.9] line 29 dereference failure: pointer NULL in s2[(signed long int)i]: SUCCESS
+[strncmp.pointer_dereference.10] line 29 dereference failure: deallocated dynamic object in s2[(signed long int)i]: SUCCESS
+[strncmp.pointer_dereference.11] line 29 dereference failure: dead object in s2[(signed long int)i]: SUCCESS
+[strncmp.pointer_dereference.12] line 29 dereference failure: pointer outside dynamic object bounds in s2[(signed long int)i]: SUCCESS
+[strncmp.pointer_dereference.13] line 29 dereference failure: pointer outside object bounds in s2[(signed long int)i]: SUCCESS
+[strncmp.pointer_dereference.14] line 29 dereference failure: invalid integer address in s2[(signed long int)i]: SUCCESS
+[strncmp.overflow.3] line 40 arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+
+Trace for convertInt32ToAscii.overflow.1:
+
+State 26 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 33 thread 0
+----------------------------------------------------
+  pRequestHeaders=((HTTPRequestHeaders_t *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 27 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 33 thread 0
+----------------------------------------------------
+  pRequestHeaders=((HTTPRequestHeaders_t *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 28 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 34 thread 0
+----------------------------------------------------
+  rangeStartOrlastNbytes=-2147483648 (10000000 00000000 00000000 00000000)
+
+State 29 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 35 thread 0
+----------------------------------------------------
+  rangeEnd=-1 (11111111 11111111 11111111 11111111)
+
+State 32 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 38 thread 0
+----------------------------------------------------
+  pRequestHeaders=((HTTPRequestHeaders_t *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 37 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function allocateHttpRequestHeaders line 17 thread 0
+----------------------------------------------------
+  size=24ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00011000)
+
+State 46 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function mallocCanFail line 10 thread 0
+----------------------------------------------------
+  malloc_size=24ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00011000)
+
+State 52 file <builtin-library-malloc> function malloc line 38 thread 0
+----------------------------------------------------
+  dynamic_object1.pBuffer=((uint8_t *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 53 file <builtin-library-malloc> function malloc line 38 thread 0
+----------------------------------------------------
+  dynamic_object1.bufferLen=916992697565178ul (00000000 00000011 01000001 11111111 11111111 11111111 11111111 11111010)
+
+State 54 file <builtin-library-malloc> function malloc line 38 thread 0
+----------------------------------------------------
+  dynamic_object1.headersLen=2891715581050875ul (00000000 00001010 01000101 11111111 11111111 11111111 11111111 11111011)
+
+State 73 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function allocateHttpRequestHeaders line 17 thread 0
+----------------------------------------------------
+  pRequestHeaders=&dynamic_object1 (00000011 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+Assumption:
+  file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c line 22 function allocateHttpRequestHeaders
+  pRequestHeaders->bufferLen < 18446744073709551615ul >> 8 + 1
+
+State 87 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function allocateHttpRequestHeaders line 23 thread 0
+----------------------------------------------------
+  size=916992697565178ul (00000000 00000011 01000001 11111111 11111111 11111111 11111111 11111010)
+
+State 97 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function mallocCanFail line 10 thread 0
+----------------------------------------------------
+  malloc_size=916992697565178ul (00000000 00000011 01000001 11111111 11111111 11111111 11111111 11111010)
+
+State 129 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function allocateHttpRequestHeaders line 23 thread 0
+----------------------------------------------------
+  dynamic_object1.pBuffer=dynamic_object2 (00000010 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 132 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 38 thread 0
+----------------------------------------------------
+  pRequestHeaders=&dynamic_object1 (00000011 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 136 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 39 thread 0
+----------------------------------------------------
+  pRequestHeaders=&dynamic_object1 (00000011 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 137 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function isValidHttpRequestHeaders line 31 thread 0
+----------------------------------------------------
+  isValid=FALSE (00000000)
+
+State 138 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function isValidHttpRequestHeaders line 31 thread 0
+----------------------------------------------------
+  isValid=TRUE (00000001)
+
+State 155 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function isValidHttpRequestHeaders line 35 thread 0
+----------------------------------------------------
+  isValid=TRUE (00000001)
+
+Assumption:
+  file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c line 39 function harness
+  return_value_isValidHttpRequestHeaders != FALSE
+
+State 162 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 41 thread 0
+----------------------------------------------------
+  pRequestHeaders=&dynamic_object1 (00000011 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 163 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 41 thread 0
+----------------------------------------------------
+  rangeStartOrlastNbytes=-2147483648 (10000000 00000000 00000000 00000000)
+
+State 164 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 41 thread 0
+----------------------------------------------------
+  rangeEnd=-1 (11111111 11111111 11111111 11111111)
+
+State 165 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1431 thread 0
+----------------------------------------------------
+  returnStatus=/*enum*/HTTP_SUCCESS (00000000 00000000 00000000 00000000)
+
+State 166 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1431 thread 0
+----------------------------------------------------
+  returnStatus=/*enum*/HTTP_SUCCESS (00000000 00000000 00000000 00000000)
+
+State 167 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer={ rangeValueBuffer!0@1#1[[0]], rangeValueBuffer!0@1#1[[1]], rangeValueBuffer!0@1#1[[2]], rangeValueBuffer!0@1#1[[3]], rangeValueBuffer!0@1#1[[4]], rangeValueBuffer!0@1#1[[5]], rangeValueBuffer!0@1#1[[6]], rangeValueBuffer!0@1#1[[7]], rangeValueBuffer!0@1#1[[8]], rangeValueBuffer!0@1#1[[9]], rangeValueBuffer!0@1#1[[10]], rangeValueBuffer!0@1#1[[11]], rangeValueBuffer!0@1#1[[12]], rangeValueBuffer!0@1#1[[13]], rangeValueBuffer!0@1#1[[14]], rangeValueBuffer!0@1#1[[15]], rangeValueBuffer!0@1#1[[16]], rangeValueBuffer!0@1#1[[17]], rangeValueBuffer!0@1#1[[18]], rangeValueBuffer!0@1#1[[19]], rangeValueBuffer!0@1#1[[20]], rangeValueBuffer!0@1#1[[21]], rangeValueBuffer!0@1#1[[22]], rangeValueBuffer!0@1#1[[23]], rangeValueBuffer!0@1#1[[24]], rangeValueBuffer!0@1#1[[25]], rangeValueBuffer!0@1#1[[26]] } ({ ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? })
+
+State 168 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer={ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ({ 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000 })
+
+State 169 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[0l]=0 (00000000)
+
+State 170 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[1l]=0 (00000000)
+
+State 171 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[2l]=0 (00000000)
+
+State 172 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[3l]=0 (00000000)
+
+State 173 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[4l]=0 (00000000)
+
+State 174 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[5l]=0 (00000000)
+
+State 175 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[6l]=0 (00000000)
+
+State 176 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[7l]=0 (00000000)
+
+State 177 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[8l]=0 (00000000)
+
+State 178 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[9l]=0 (00000000)
+
+State 179 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[10l]=0 (00000000)
+
+State 180 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[11l]=0 (00000000)
+
+State 181 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[12l]=0 (00000000)
+
+State 182 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[13l]=0 (00000000)
+
+State 183 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[14l]=0 (00000000)
+
+State 184 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[15l]=0 (00000000)
+
+State 185 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[16l]=0 (00000000)
+
+State 186 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[17l]=0 (00000000)
+
+State 187 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[18l]=0 (00000000)
+
+State 188 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[19l]=0 (00000000)
+
+State 189 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[20l]=0 (00000000)
+
+State 190 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[21l]=0 (00000000)
+
+State 191 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[22l]=0 (00000000)
+
+State 192 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[23l]=0 (00000000)
+
+State 193 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[24l]=0 (00000000)
+
+State 194 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[25l]=0 (00000000)
+
+State 195 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[26l]=0 (00000000)
+
+State 196 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1436 thread 0
+----------------------------------------------------
+  rangeValueLength=0ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 197 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1436 thread 0
+----------------------------------------------------
+  rangeValueLength=0ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 219 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1477 thread 0
+----------------------------------------------------
+  dst=(const void *)rangeValueBuffer!0@1 (00000100 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 220 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1477 thread 0
+----------------------------------------------------
+  src=(const void *)&"bytes=" (00000101 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 221 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1477 thread 0
+----------------------------------------------------
+  n=6ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000110)
+
+State 222 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1477 thread 0
+----------------------------------------------------
+  size=18446744073709551615ul (11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111)
+
+State 231 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 39 thread 0
+----------------------------------------------------
+  src_n[0l]='b' (01100010)
+
+State 232 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 39 thread 0
+----------------------------------------------------
+  src_n[1l]='y' (01111001)
+
+State 233 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 39 thread 0
+----------------------------------------------------
+  src_n[2l]='t' (01110100)
+
+State 234 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 39 thread 0
+----------------------------------------------------
+  src_n[3l]='e' (01100101)
+
+State 235 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 39 thread 0
+----------------------------------------------------
+  src_n[4l]='s' (01110011)
+
+State 236 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 39 thread 0
+----------------------------------------------------
+  src_n[5l]='=' (00111101)
+
+State 238 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[0l]='b' (01100010)
+
+State 239 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[1l]='y' (01111001)
+
+State 240 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[2l]='t' (01110100)
+
+State 241 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[3l]='e' (01100101)
+
+State 242 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[4l]='s' (01110011)
+
+State 243 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[5l]='=' (00111101)
+
+State 244 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[6l]=0 (00000000)
+
+State 245 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[7l]=0 (00000000)
+
+State 246 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[8l]=0 (00000000)
+
+State 247 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[9l]=0 (00000000)
+
+State 248 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[10l]=0 (00000000)
+
+State 249 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[11l]=0 (00000000)
+
+State 250 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[12l]=0 (00000000)
+
+State 251 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[13l]=0 (00000000)
+
+State 252 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[14l]=0 (00000000)
+
+State 253 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[15l]=0 (00000000)
+
+State 254 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[16l]=0 (00000000)
+
+State 255 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[17l]=0 (00000000)
+
+State 256 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[18l]=0 (00000000)
+
+State 257 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[19l]=0 (00000000)
+
+State 258 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[20l]=0 (00000000)
+
+State 259 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[21l]=0 (00000000)
+
+State 260 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[22l]=0 (00000000)
+
+State 261 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[23l]=0 (00000000)
+
+State 262 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[24l]=0 (00000000)
+
+State 263 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[25l]=0 (00000000)
+
+State 264 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[26l]=0 (00000000)
+
+State 269 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1480 thread 0
+----------------------------------------------------
+  rangeValueLength=6ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000110)
+
+State 275 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1483 thread 0
+----------------------------------------------------
+  value=-2147483648 (10000000 00000000 00000000 00000000)
+
+State 276 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1483 thread 0
+----------------------------------------------------
+  pBuffer=rangeValueBuffer!0@1 + 6l (00000100 00000000 00000000 00000000 00000000 00000000 00000000 00000110)
+
+State 277 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1483 thread 0
+----------------------------------------------------
+  bufferLength=21ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00010101)
+
+State 278 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1075 thread 0
+----------------------------------------------------
+  absoluteValue=0 (00000000 00000000 00000000 00000000)
+
+State 279 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1075 thread 0
+----------------------------------------------------
+  absoluteValue=-2147483648 (10000000 00000000 00000000 00000000)
+
+State 280 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1076 thread 0
+----------------------------------------------------
+  numOfDigits=0 (00000000)
+
+State 281 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1076 thread 0
+----------------------------------------------------
+  numOfDigits=0 (00000000)
+
+State 282 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1077 thread 0
+----------------------------------------------------
+  index=0 (00000000)
+
+State 283 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1077 thread 0
+----------------------------------------------------
+  index=0 (00000000)
+
+State 284 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1078 thread 0
+----------------------------------------------------
+  isNegative=0 (00000000)
+
+State 285 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1078 thread 0
+----------------------------------------------------
+  isNegative=0 (00000000)
+
+State 286 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1079 thread 0
+----------------------------------------------------
+  temp=0 (00000000)
+
+State 287 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1079 thread 0
+----------------------------------------------------
+  temp=0 (00000000)
+
+State 290 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1088 thread 0
+----------------------------------------------------
+  isNegative=1 (00000001)
+
+State 291 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1090 thread 0
+----------------------------------------------------
+  rangeValueBuffer[6l]='-' (00101101)
+
+Violated property:
+  file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1093 thread 0
+  arithmetic overflow on signed * in value * -1
+  !overflow("*", int32_t, value, -1)
+
+
+
+Trace for convertInt32ToAscii.unwind.0:
+
+State 26 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 33 thread 0
+----------------------------------------------------
+  pRequestHeaders=((HTTPRequestHeaders_t *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 27 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 33 thread 0
+----------------------------------------------------
+  pRequestHeaders=((HTTPRequestHeaders_t *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 28 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 34 thread 0
+----------------------------------------------------
+  rangeStartOrlastNbytes=-2147483648 (10000000 00000000 00000000 00000000)
+
+State 29 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 35 thread 0
+----------------------------------------------------
+  rangeEnd=-1 (11111111 11111111 11111111 11111111)
+
+State 32 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 38 thread 0
+----------------------------------------------------
+  pRequestHeaders=((HTTPRequestHeaders_t *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 37 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function allocateHttpRequestHeaders line 17 thread 0
+----------------------------------------------------
+  size=24ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00011000)
+
+State 46 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function mallocCanFail line 10 thread 0
+----------------------------------------------------
+  malloc_size=24ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00011000)
+
+State 52 file <builtin-library-malloc> function malloc line 38 thread 0
+----------------------------------------------------
+  dynamic_object1.pBuffer=((uint8_t *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 53 file <builtin-library-malloc> function malloc line 38 thread 0
+----------------------------------------------------
+  dynamic_object1.bufferLen=916992697565178ul (00000000 00000011 01000001 11111111 11111111 11111111 11111111 11111010)
+
+State 54 file <builtin-library-malloc> function malloc line 38 thread 0
+----------------------------------------------------
+  dynamic_object1.headersLen=2891715581050875ul (00000000 00001010 01000101 11111111 11111111 11111111 11111111 11111011)
+
+State 73 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function allocateHttpRequestHeaders line 17 thread 0
+----------------------------------------------------
+  pRequestHeaders=&dynamic_object1 (00000011 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+Assumption:
+  file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c line 22 function allocateHttpRequestHeaders
+  pRequestHeaders->bufferLen < 18446744073709551615ul >> 8 + 1
+
+State 87 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function allocateHttpRequestHeaders line 23 thread 0
+----------------------------------------------------
+  size=916992697565178ul (00000000 00000011 01000001 11111111 11111111 11111111 11111111 11111010)
+
+State 97 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function mallocCanFail line 10 thread 0
+----------------------------------------------------
+  malloc_size=916992697565178ul (00000000 00000011 01000001 11111111 11111111 11111111 11111111 11111010)
+
+State 129 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function allocateHttpRequestHeaders line 23 thread 0
+----------------------------------------------------
+  dynamic_object1.pBuffer=dynamic_object2 (00000010 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 132 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 38 thread 0
+----------------------------------------------------
+  pRequestHeaders=&dynamic_object1 (00000011 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 136 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 39 thread 0
+----------------------------------------------------
+  pRequestHeaders=&dynamic_object1 (00000011 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 137 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function isValidHttpRequestHeaders line 31 thread 0
+----------------------------------------------------
+  isValid=FALSE (00000000)
+
+State 138 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function isValidHttpRequestHeaders line 31 thread 0
+----------------------------------------------------
+  isValid=TRUE (00000001)
+
+State 155 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function isValidHttpRequestHeaders line 35 thread 0
+----------------------------------------------------
+  isValid=TRUE (00000001)
+
+Assumption:
+  file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c line 39 function harness
+  return_value_isValidHttpRequestHeaders != FALSE
+
+State 162 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 41 thread 0
+----------------------------------------------------
+  pRequestHeaders=&dynamic_object1 (00000011 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 163 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 41 thread 0
+----------------------------------------------------
+  rangeStartOrlastNbytes=-2147483648 (10000000 00000000 00000000 00000000)
+
+State 164 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 41 thread 0
+----------------------------------------------------
+  rangeEnd=-1 (11111111 11111111 11111111 11111111)
+
+State 165 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1431 thread 0
+----------------------------------------------------
+  returnStatus=/*enum*/HTTP_SUCCESS (00000000 00000000 00000000 00000000)
+
+State 166 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1431 thread 0
+----------------------------------------------------
+  returnStatus=/*enum*/HTTP_SUCCESS (00000000 00000000 00000000 00000000)
+
+State 167 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer={ rangeValueBuffer!0@1#1[[0]], rangeValueBuffer!0@1#1[[1]], rangeValueBuffer!0@1#1[[2]], rangeValueBuffer!0@1#1[[3]], rangeValueBuffer!0@1#1[[4]], rangeValueBuffer!0@1#1[[5]], rangeValueBuffer!0@1#1[[6]], rangeValueBuffer!0@1#1[[7]], rangeValueBuffer!0@1#1[[8]], rangeValueBuffer!0@1#1[[9]], rangeValueBuffer!0@1#1[[10]], rangeValueBuffer!0@1#1[[11]], rangeValueBuffer!0@1#1[[12]], rangeValueBuffer!0@1#1[[13]], rangeValueBuffer!0@1#1[[14]], rangeValueBuffer!0@1#1[[15]], rangeValueBuffer!0@1#1[[16]], rangeValueBuffer!0@1#1[[17]], rangeValueBuffer!0@1#1[[18]], rangeValueBuffer!0@1#1[[19]], rangeValueBuffer!0@1#1[[20]], rangeValueBuffer!0@1#1[[21]], rangeValueBuffer!0@1#1[[22]], rangeValueBuffer!0@1#1[[23]], rangeValueBuffer!0@1#1[[24]], rangeValueBuffer!0@1#1[[25]], rangeValueBuffer!0@1#1[[26]] } ({ ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? })
+
+State 168 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer={ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ({ 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000 })
+
+State 169 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[0l]=0 (00000000)
+
+State 170 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[1l]=0 (00000000)
+
+State 171 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[2l]=0 (00000000)
+
+State 172 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[3l]=0 (00000000)
+
+State 173 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[4l]=0 (00000000)
+
+State 174 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[5l]=0 (00000000)
+
+State 175 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[6l]=0 (00000000)
+
+State 176 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[7l]=0 (00000000)
+
+State 177 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[8l]=0 (00000000)
+
+State 178 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[9l]=0 (00000000)
+
+State 179 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[10l]=0 (00000000)
+
+State 180 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[11l]=0 (00000000)
+
+State 181 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[12l]=0 (00000000)
+
+State 182 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[13l]=0 (00000000)
+
+State 183 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[14l]=0 (00000000)
+
+State 184 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[15l]=0 (00000000)
+
+State 185 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[16l]=0 (00000000)
+
+State 186 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[17l]=0 (00000000)
+
+State 187 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[18l]=0 (00000000)
+
+State 188 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[19l]=0 (00000000)
+
+State 189 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[20l]=0 (00000000)
+
+State 190 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[21l]=0 (00000000)
+
+State 191 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[22l]=0 (00000000)
+
+State 192 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[23l]=0 (00000000)
+
+State 193 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[24l]=0 (00000000)
+
+State 194 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[25l]=0 (00000000)
+
+State 195 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[26l]=0 (00000000)
+
+State 196 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1436 thread 0
+----------------------------------------------------
+  rangeValueLength=0ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 197 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1436 thread 0
+----------------------------------------------------
+  rangeValueLength=0ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 219 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1477 thread 0
+----------------------------------------------------
+  dst=(const void *)rangeValueBuffer!0@1 (00000100 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 220 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1477 thread 0
+----------------------------------------------------
+  src=(const void *)&"bytes=" (00000101 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 221 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1477 thread 0
+----------------------------------------------------
+  n=6ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000110)
+
+State 222 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1477 thread 0
+----------------------------------------------------
+  size=18446744073709551615ul (11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111)
+
+State 231 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 39 thread 0
+----------------------------------------------------
+  src_n[0l]='b' (01100010)
+
+State 232 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 39 thread 0
+----------------------------------------------------
+  src_n[1l]='y' (01111001)
+
+State 233 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 39 thread 0
+----------------------------------------------------
+  src_n[2l]='t' (01110100)
+
+State 234 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 39 thread 0
+----------------------------------------------------
+  src_n[3l]='e' (01100101)
+
+State 235 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 39 thread 0
+----------------------------------------------------
+  src_n[4l]='s' (01110011)
+
+State 236 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 39 thread 0
+----------------------------------------------------
+  src_n[5l]='=' (00111101)
+
+State 238 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[0l]='b' (01100010)
+
+State 239 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[1l]='y' (01111001)
+
+State 240 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[2l]='t' (01110100)
+
+State 241 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[3l]='e' (01100101)
+
+State 242 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[4l]='s' (01110011)
+
+State 243 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[5l]='=' (00111101)
+
+State 244 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[6l]=0 (00000000)
+
+State 245 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[7l]=0 (00000000)
+
+State 246 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[8l]=0 (00000000)
+
+State 247 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[9l]=0 (00000000)
+
+State 248 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[10l]=0 (00000000)
+
+State 249 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[11l]=0 (00000000)
+
+State 250 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[12l]=0 (00000000)
+
+State 251 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[13l]=0 (00000000)
+
+State 252 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[14l]=0 (00000000)
+
+State 253 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[15l]=0 (00000000)
+
+State 254 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[16l]=0 (00000000)
+
+State 255 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[17l]=0 (00000000)
+
+State 256 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[18l]=0 (00000000)
+
+State 257 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[19l]=0 (00000000)
+
+State 258 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[20l]=0 (00000000)
+
+State 259 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[21l]=0 (00000000)
+
+State 260 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[22l]=0 (00000000)
+
+State 261 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[23l]=0 (00000000)
+
+State 262 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[24l]=0 (00000000)
+
+State 263 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[25l]=0 (00000000)
+
+State 264 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[26l]=0 (00000000)
+
+State 269 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1480 thread 0
+----------------------------------------------------
+  rangeValueLength=6ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000110)
+
+State 275 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1483 thread 0
+----------------------------------------------------
+  value=-2147483648 (10000000 00000000 00000000 00000000)
+
+State 276 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1483 thread 0
+----------------------------------------------------
+  pBuffer=rangeValueBuffer!0@1 + 6l (00000100 00000000 00000000 00000000 00000000 00000000 00000000 00000110)
+
+State 277 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1483 thread 0
+----------------------------------------------------
+  bufferLength=21ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00010101)
+
+State 278 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1075 thread 0
+----------------------------------------------------
+  absoluteValue=0 (00000000 00000000 00000000 00000000)
+
+State 279 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1075 thread 0
+----------------------------------------------------
+  absoluteValue=-2147483648 (10000000 00000000 00000000 00000000)
+
+State 280 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1076 thread 0
+----------------------------------------------------
+  numOfDigits=0 (00000000)
+
+State 281 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1076 thread 0
+----------------------------------------------------
+  numOfDigits=0 (00000000)
+
+State 282 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1077 thread 0
+----------------------------------------------------
+  index=0 (00000000)
+
+State 283 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1077 thread 0
+----------------------------------------------------
+  index=0 (00000000)
+
+State 284 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1078 thread 0
+----------------------------------------------------
+  isNegative=0 (00000000)
+
+State 285 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1078 thread 0
+----------------------------------------------------
+  isNegative=0 (00000000)
+
+State 286 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1079 thread 0
+----------------------------------------------------
+  temp=0 (00000000)
+
+State 287 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1079 thread 0
+----------------------------------------------------
+  temp=0 (00000000)
+
+State 290 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1088 thread 0
+----------------------------------------------------
+  isNegative=1 (00000001)
+
+State 291 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1090 thread 0
+----------------------------------------------------
+  rangeValueBuffer[6l]='-' (00101101)
+
+Violated property:
+  file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1093 thread 0
+  arithmetic overflow on signed * in value * -1
+  !overflow("*", int32_t, value, -1)
+
+
+State 293 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1093 thread 0
+----------------------------------------------------
+  absoluteValue=-2147483648 (10000000 00000000 00000000 00000000)
+
+State 299 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[7l]='(' (00101000)
+
+State 300 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[0l]='b' (01100010)
+
+State 301 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[1l]='y' (01111001)
+
+State 302 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[2l]='t' (01110100)
+
+State 303 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[3l]='e' (01100101)
+
+State 304 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[4l]='s' (01110011)
+
+State 305 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[5l]='=' (00111101)
+
+State 306 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[6l]='-' (00101101)
+
+State 307 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[7l]='(' (00101000)
+
+State 308 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[8l]=0 (00000000)
+
+State 309 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[9l]=0 (00000000)
+
+State 310 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[10l]=0 (00000000)
+
+State 311 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[11l]=0 (00000000)
+
+State 312 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[12l]=0 (00000000)
+
+State 313 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[13l]=0 (00000000)
+
+State 314 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[14l]=0 (00000000)
+
+State 315 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[15l]=0 (00000000)
+
+State 316 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[16l]=0 (00000000)
+
+State 317 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[17l]=0 (00000000)
+
+State 318 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[18l]=0 (00000000)
+
+State 319 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[19l]=0 (00000000)
+
+State 320 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[20l]=0 (00000000)
+
+State 321 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[21l]=0 (00000000)
+
+State 322 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[22l]=0 (00000000)
+
+State 323 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[23l]=0 (00000000)
+
+State 324 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[24l]=0 (00000000)
+
+State 325 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[25l]=0 (00000000)
+
+State 326 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[26l]=0 (00000000)
+
+State 328 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1100 thread 0
+----------------------------------------------------
+  numOfDigits=1 (00000001)
+
+State 329 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1101 thread 0
+----------------------------------------------------
+  absoluteValue=-214748364 (11110011 00110011 00110011 00110100)
+
+Violated property:
+  file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1102 thread 0
+  unwinding assertion loop 0
+
+
+
+Trace for strncmp.pointer_dereference.5:
+
+State 26 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 33 thread 0
+----------------------------------------------------
+  pRequestHeaders=((HTTPRequestHeaders_t *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 27 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 33 thread 0
+----------------------------------------------------
+  pRequestHeaders=((HTTPRequestHeaders_t *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 28 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 34 thread 0
+----------------------------------------------------
+  rangeStartOrlastNbytes=7 (00000000 00000000 00000000 00000111)
+
+State 29 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 35 thread 0
+----------------------------------------------------
+  rangeEnd=-1 (11111111 11111111 11111111 11111111)
+
+State 32 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 38 thread 0
+----------------------------------------------------
+  pRequestHeaders=((HTTPRequestHeaders_t *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 37 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function allocateHttpRequestHeaders line 17 thread 0
+----------------------------------------------------
+  size=24ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00011000)
+
+State 46 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function mallocCanFail line 10 thread 0
+----------------------------------------------------
+  malloc_size=24ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00011000)
+
+State 52 file <builtin-library-malloc> function malloc line 38 thread 0
+----------------------------------------------------
+  dynamic_object1.pBuffer=((uint8_t *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 53 file <builtin-library-malloc> function malloc line 38 thread 0
+----------------------------------------------------
+  dynamic_object1.bufferLen=22243601266245633ul (00000000 01001111 00000110 01110000 00000000 00000000 00000000 00000001)
+
+State 54 file <builtin-library-malloc> function malloc line 38 thread 0
+----------------------------------------------------
+  dynamic_object1.headersLen=22284008318566394ul (00000000 01001111 00101011 00101111 11111111 11111111 11111111 11111010)
+
+State 73 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function allocateHttpRequestHeaders line 17 thread 0
+----------------------------------------------------
+  pRequestHeaders=&dynamic_object1 (00000011 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+Assumption:
+  file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c line 22 function allocateHttpRequestHeaders
+  pRequestHeaders->bufferLen < 18446744073709551615ul >> 8 + 1
+
+State 87 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function allocateHttpRequestHeaders line 23 thread 0
+----------------------------------------------------
+  size=22243601266245633ul (00000000 01001111 00000110 01110000 00000000 00000000 00000000 00000001)
+
+State 97 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function mallocCanFail line 10 thread 0
+----------------------------------------------------
+  malloc_size=22243601266245633ul (00000000 01001111 00000110 01110000 00000000 00000000 00000000 00000001)
+
+State 129 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function allocateHttpRequestHeaders line 23 thread 0
+----------------------------------------------------
+  dynamic_object1.pBuffer=dynamic_object2 (00000010 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 132 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 38 thread 0
+----------------------------------------------------
+  pRequestHeaders=&dynamic_object1 (00000011 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 136 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 39 thread 0
+----------------------------------------------------
+  pRequestHeaders=&dynamic_object1 (00000011 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 137 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function isValidHttpRequestHeaders line 31 thread 0
+----------------------------------------------------
+  isValid=FALSE (00000000)
+
+State 138 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function isValidHttpRequestHeaders line 31 thread 0
+----------------------------------------------------
+  isValid=TRUE (00000001)
+
+State 155 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/../../sources/http_cbmc_state.c function isValidHttpRequestHeaders line 35 thread 0
+----------------------------------------------------
+  isValid=TRUE (00000001)
+
+Assumption:
+  file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c line 39 function harness
+  return_value_isValidHttpRequestHeaders != FALSE
+
+State 162 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 41 thread 0
+----------------------------------------------------
+  pRequestHeaders=&dynamic_object1 (00000011 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 163 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 41 thread 0
+----------------------------------------------------
+  rangeStartOrlastNbytes=7 (00000000 00000000 00000000 00000111)
+
+State 164 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_AddRangeHeader/HTTPClient_AddRangeHeader_harness.c function harness line 41 thread 0
+----------------------------------------------------
+  rangeEnd=-1 (11111111 11111111 11111111 11111111)
+
+State 165 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1431 thread 0
+----------------------------------------------------
+  returnStatus=/*enum*/HTTP_SUCCESS (00000000 00000000 00000000 00000000)
+
+State 166 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1431 thread 0
+----------------------------------------------------
+  returnStatus=/*enum*/HTTP_SUCCESS (00000000 00000000 00000000 00000000)
+
+State 167 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer={ rangeValueBuffer!0@1#1[[0]], rangeValueBuffer!0@1#1[[1]], rangeValueBuffer!0@1#1[[2]], rangeValueBuffer!0@1#1[[3]], rangeValueBuffer!0@1#1[[4]], rangeValueBuffer!0@1#1[[5]], rangeValueBuffer!0@1#1[[6]], rangeValueBuffer!0@1#1[[7]], rangeValueBuffer!0@1#1[[8]], rangeValueBuffer!0@1#1[[9]], rangeValueBuffer!0@1#1[[10]], rangeValueBuffer!0@1#1[[11]], rangeValueBuffer!0@1#1[[12]], rangeValueBuffer!0@1#1[[13]], rangeValueBuffer!0@1#1[[14]], rangeValueBuffer!0@1#1[[15]], rangeValueBuffer!0@1#1[[16]], rangeValueBuffer!0@1#1[[17]], rangeValueBuffer!0@1#1[[18]], rangeValueBuffer!0@1#1[[19]], rangeValueBuffer!0@1#1[[20]], rangeValueBuffer!0@1#1[[21]], rangeValueBuffer!0@1#1[[22]], rangeValueBuffer!0@1#1[[23]], rangeValueBuffer!0@1#1[[24]], rangeValueBuffer!0@1#1[[25]], rangeValueBuffer!0@1#1[[26]] } ({ ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? })
+
+State 168 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer={ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ({ 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000 })
+
+State 169 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[0l]=0 (00000000)
+
+State 170 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[1l]=0 (00000000)
+
+State 171 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[2l]=0 (00000000)
+
+State 172 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[3l]=0 (00000000)
+
+State 173 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[4l]=0 (00000000)
+
+State 174 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[5l]=0 (00000000)
+
+State 175 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[6l]=0 (00000000)
+
+State 176 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[7l]=0 (00000000)
+
+State 177 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[8l]=0 (00000000)
+
+State 178 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[9l]=0 (00000000)
+
+State 179 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[10l]=0 (00000000)
+
+State 180 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[11l]=0 (00000000)
+
+State 181 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[12l]=0 (00000000)
+
+State 182 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[13l]=0 (00000000)
+
+State 183 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[14l]=0 (00000000)
+
+State 184 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[15l]=0 (00000000)
+
+State 185 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[16l]=0 (00000000)
+
+State 186 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[17l]=0 (00000000)
+
+State 187 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[18l]=0 (00000000)
+
+State 188 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[19l]=0 (00000000)
+
+State 189 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[20l]=0 (00000000)
+
+State 190 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[21l]=0 (00000000)
+
+State 191 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[22l]=0 (00000000)
+
+State 192 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[23l]=0 (00000000)
+
+State 193 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[24l]=0 (00000000)
+
+State 194 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[25l]=0 (00000000)
+
+State 195 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1435 thread 0
+----------------------------------------------------
+  rangeValueBuffer[26l]=0 (00000000)
+
+State 196 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1436 thread 0
+----------------------------------------------------
+  rangeValueLength=0ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 197 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1436 thread 0
+----------------------------------------------------
+  rangeValueLength=0ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 219 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1477 thread 0
+----------------------------------------------------
+  dst=(const void *)rangeValueBuffer!0@1 (00000100 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 220 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1477 thread 0
+----------------------------------------------------
+  src=(const void *)&"bytes=" (00000101 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 221 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1477 thread 0
+----------------------------------------------------
+  n=6ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000110)
+
+State 222 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1477 thread 0
+----------------------------------------------------
+  size=18446744073709551615ul (11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111)
+
+State 231 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 39 thread 0
+----------------------------------------------------
+  src_n[0l]='b' (01100010)
+
+State 232 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 39 thread 0
+----------------------------------------------------
+  src_n[1l]='y' (01111001)
+
+State 233 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 39 thread 0
+----------------------------------------------------
+  src_n[2l]='t' (01110100)
+
+State 234 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 39 thread 0
+----------------------------------------------------
+  src_n[3l]='e' (01100101)
+
+State 235 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 39 thread 0
+----------------------------------------------------
+  src_n[4l]='s' (01110011)
+
+State 236 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 39 thread 0
+----------------------------------------------------
+  src_n[5l]='=' (00111101)
+
+State 238 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[0l]='b' (01100010)
+
+State 239 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[1l]='y' (01111001)
+
+State 240 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[2l]='t' (01110100)
+
+State 241 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[3l]='e' (01100101)
+
+State 242 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[4l]='s' (01110011)
+
+State 243 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[5l]='=' (00111101)
+
+State 244 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[6l]=0 (00000000)
+
+State 245 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[7l]=0 (00000000)
+
+State 246 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[8l]=0 (00000000)
+
+State 247 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[9l]=0 (00000000)
+
+State 248 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[10l]=0 (00000000)
+
+State 249 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[11l]=0 (00000000)
+
+State 250 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[12l]=0 (00000000)
+
+State 251 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[13l]=0 (00000000)
+
+State 252 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[14l]=0 (00000000)
+
+State 253 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[15l]=0 (00000000)
+
+State 254 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[16l]=0 (00000000)
+
+State 255 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[17l]=0 (00000000)
+
+State 256 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[18l]=0 (00000000)
+
+State 257 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[19l]=0 (00000000)
+
+State 258 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[20l]=0 (00000000)
+
+State 259 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[21l]=0 (00000000)
+
+State 260 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[22l]=0 (00000000)
+
+State 261 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[23l]=0 (00000000)
+
+State 262 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[24l]=0 (00000000)
+
+State 263 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[25l]=0 (00000000)
+
+State 264 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[26l]=0 (00000000)
+
+State 269 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1480 thread 0
+----------------------------------------------------
+  rangeValueLength=6ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000110)
+
+State 275 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1483 thread 0
+----------------------------------------------------
+  value=7 (00000000 00000000 00000000 00000111)
+
+State 276 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1483 thread 0
+----------------------------------------------------
+  pBuffer=rangeValueBuffer!0@1 + 6l (00000100 00000000 00000000 00000000 00000000 00000000 00000000 00000110)
+
+State 277 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1483 thread 0
+----------------------------------------------------
+  bufferLength=21ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00010101)
+
+State 278 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1075 thread 0
+----------------------------------------------------
+  absoluteValue=0 (00000000 00000000 00000000 00000000)
+
+State 279 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1075 thread 0
+----------------------------------------------------
+  absoluteValue=7 (00000000 00000000 00000000 00000111)
+
+State 280 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1076 thread 0
+----------------------------------------------------
+  numOfDigits=0 (00000000)
+
+State 281 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1076 thread 0
+----------------------------------------------------
+  numOfDigits=0 (00000000)
+
+State 282 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1077 thread 0
+----------------------------------------------------
+  index=0 (00000000)
+
+State 283 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1077 thread 0
+----------------------------------------------------
+  index=0 (00000000)
+
+State 284 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1078 thread 0
+----------------------------------------------------
+  isNegative=0 (00000000)
+
+State 285 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1078 thread 0
+----------------------------------------------------
+  isNegative=0 (00000000)
+
+State 286 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1079 thread 0
+----------------------------------------------------
+  temp=0 (00000000)
+
+State 287 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1079 thread 0
+----------------------------------------------------
+  temp=0 (00000000)
+
+State 295 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[6l]='7' (00110111)
+
+State 296 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[0l]='b' (01100010)
+
+State 297 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[1l]='y' (01111001)
+
+State 298 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[2l]='t' (01110100)
+
+State 299 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[3l]='e' (01100101)
+
+State 300 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[4l]='s' (01110011)
+
+State 301 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[5l]='=' (00111101)
+
+State 302 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[6l]='7' (00110111)
+
+State 303 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[7l]=0 (00000000)
+
+State 304 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[8l]=0 (00000000)
+
+State 305 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[9l]=0 (00000000)
+
+State 306 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[10l]=0 (00000000)
+
+State 307 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[11l]=0 (00000000)
+
+State 308 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[12l]=0 (00000000)
+
+State 309 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[13l]=0 (00000000)
+
+State 310 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[14l]=0 (00000000)
+
+State 311 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[15l]=0 (00000000)
+
+State 312 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[16l]=0 (00000000)
+
+State 313 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[17l]=0 (00000000)
+
+State 314 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[18l]=0 (00000000)
+
+State 315 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[19l]=0 (00000000)
+
+State 316 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[20l]=0 (00000000)
+
+State 317 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[21l]=0 (00000000)
+
+State 318 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[22l]=0 (00000000)
+
+State 319 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[23l]=0 (00000000)
+
+State 320 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[24l]=0 (00000000)
+
+State 321 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[25l]=0 (00000000)
+
+State 322 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1099 thread 0
+----------------------------------------------------
+  rangeValueBuffer[26l]=0 (00000000)
+
+State 324 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1100 thread 0
+----------------------------------------------------
+  numOfDigits=1 (00000001)
+
+State 325 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1101 thread 0
+----------------------------------------------------
+  absoluteValue=0 (00000000 00000000 00000000 00000000)
+
+State 329 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function convertInt32ToAscii line 1106 thread 0
+----------------------------------------------------
+  index=0 (00000000)
+
+State 337 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1483 thread 0
+----------------------------------------------------
+  rangeValueLength=7ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000111)
+
+State 356 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1507 thread 0
+----------------------------------------------------
+  dst=(const void *)(rangeValueBuffer!0@1 + 7l) (00000100 00000000 00000000 00000000 00000000 00000000 00000000 00000111)
+
+State 357 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1507 thread 0
+----------------------------------------------------
+  src=(const void *)&"-" (00000110 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 358 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1507 thread 0
+----------------------------------------------------
+  n=1ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000001)
+
+State 359 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1507 thread 0
+----------------------------------------------------
+  size=18446744073709551615ul (11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111)
+
+State 368 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 39 thread 0
+----------------------------------------------------
+  src_n[0l]='-' (00101101)
+
+State 370 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[0l]='b' (01100010)
+
+State 371 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[1l]='y' (01111001)
+
+State 372 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[2l]='t' (01110100)
+
+State 373 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[3l]='e' (01100101)
+
+State 374 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[4l]='s' (01110011)
+
+State 375 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[5l]='=' (00111101)
+
+State 376 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[6l]='7' (00110111)
+
+State 377 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[7l]='-' (00101101)
+
+State 378 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[8l]=0 (00000000)
+
+State 379 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[9l]=0 (00000000)
+
+State 380 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[10l]=0 (00000000)
+
+State 381 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[11l]=0 (00000000)
+
+State 382 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[12l]=0 (00000000)
+
+State 383 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[13l]=0 (00000000)
+
+State 384 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[14l]=0 (00000000)
+
+State 385 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[15l]=0 (00000000)
+
+State 386 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[16l]=0 (00000000)
+
+State 387 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[17l]=0 (00000000)
+
+State 388 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[18l]=0 (00000000)
+
+State 389 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[19l]=0 (00000000)
+
+State 390 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[20l]=0 (00000000)
+
+State 391 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[21l]=0 (00000000)
+
+State 392 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[22l]=0 (00000000)
+
+State 393 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[23l]=0 (00000000)
+
+State 394 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[24l]=0 (00000000)
+
+State 395 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[25l]=0 (00000000)
+
+State 396 file <builtin-library-__builtin___memcpy_chk> function __builtin___memcpy_chk line 40 thread 0
+----------------------------------------------------
+  rangeValueBuffer[26l]=0 (00000000)
+
+State 401 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1510 thread 0
+----------------------------------------------------
+  rangeValueLength=8ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00001000)
+
+State 405 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1518 thread 0
+----------------------------------------------------
+  pRequestHeaders=&dynamic_object1 (00000011 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 406 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1518 thread 0
+----------------------------------------------------
+  pField="Range" (00000111 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 407 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1518 thread 0
+----------------------------------------------------
+  fieldLen=5ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000101)
+
+State 408 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1518 thread 0
+----------------------------------------------------
+  pValue=rangeValueBuffer!0@1 (00000100 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 409 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_AddRangeHeader line 1518 thread 0
+----------------------------------------------------
+  valueLen=8ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00001000)
+
+State 410 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function addHeader line 1124 thread 0
+----------------------------------------------------
+  returnStatus=/*enum*/HTTP_SUCCESS (00000000 00000000 00000000 00000000)
+
+State 411 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function addHeader line 1124 thread 0
+----------------------------------------------------
+  returnStatus=/*enum*/HTTP_SUCCESS (00000000 00000000 00000000 00000000)
+
+State 412 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function addHeader line 1125 thread 0
+----------------------------------------------------
+  pBufferCur=((char *)NULL) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 426 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function addHeader line 1125 thread 0
+----------------------------------------------------
+  pBufferCur=(char *)(dynamic_object2 + 22284008318566394l) (00000010 01001111 00101011 00101111 11111111 11111111 11111111 11111010)
+
+State 427 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function addHeader line 1126 thread 0
+----------------------------------------------------
+  toAddLen=0ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 428 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function addHeader line 1126 thread 0
+----------------------------------------------------
+  toAddLen=0ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 429 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function addHeader line 1127 thread 0
+----------------------------------------------------
+  backtrackHeaderLen=0ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 430 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function addHeader line 1127 thread 0
+----------------------------------------------------
+  backtrackHeaderLen=22284008318566394ul (00000000 01001111 00101011 00101111 11111111 11111111 11111111 11111010)
+
+Assumption:
+  file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c line 1136 function addHeader
+  pRequestHeaders != ((HTTPRequestHeaders_t *)NULL)
+
+State 441 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function addHeader line 1142 thread 0
+----------------------------------------------------
+  s1=(char *)(dynamic_object2 + 22284008318566390l) (00000010 01001111 00101011 00101111 11111111 11111111 11111111 11110110)
+
+State 442 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function addHeader line 1142 thread 0
+----------------------------------------------------
+  s2="\r\n\r\n" (00001000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 443 file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function addHeader line 1142 thread 0
+----------------------------------------------------
+  n=4ul (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000100)
+
+Violated property:
+  file <builtin-library-strncmp> function strncmp line 28 thread 0
+  dereference failure: pointer outside dynamic object bounds in s1[(signed long int)i]
+  POINTER_OFFSET(s1) + (signed long int)i >= 0l && OBJECT_SIZE(s1) >= 1ul + (unsigned long int)POINTER_OFFSET(s1) + (unsigned long int)(signed long int)i || !IS_DYNAMIC_OBJECT(s1)
+
+
+
+** 3 of 257 failed (3 iterations)
+VERIFICATION FAILED
+
+real	0m3.064s
+user	0m2.850s
+sys	0m0.191s

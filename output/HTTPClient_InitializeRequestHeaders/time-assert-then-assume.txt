@@ -1,0 +1,402 @@
+mkdir -p /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/gotos/
+mkdir -p /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/logs/
+goto-cc  --export-file-local-symbols -fPIC -std=gnu90  -I/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/include -I/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/include -I/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src -I/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/third_party/http_parser -I/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/demos/http/http_demo_plaintext  -Dhttp_EXPORTS -DCBMC=1 -DCBMC_OBJECT_BITS=8 -DCBMC_MAX_OBJECT_SIZE="(SIZE_MAX>>(CBMC_OBJECT_BITS+1))" /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c -o /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/gotos/project1.goto 2>&1 | tee  /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/logs/project1.txt; exit ${PIPESTATUS[0]}
+goto-instrument  --remove-function-body __CPROVER_file_local_http_client_c_findHeaderFieldParserCallback --remove-function-body __CPROVER_file_local_http_client_c_findHeaderValueParserCallback --remove-function-body __CPROVER_file_local_http_client_c_httpParserOnBodyCallback --remove-function-body __CPROVER_file_local_http_client_c_httpParserOnHeaderFieldCallback --remove-function-body __CPROVER_file_local_http_client_c_httpParserOnHeaderValueCallback --remove-function-body __CPROVER_file_local_http_client_c_httpParserOnStatusCallback --remove-function-body __CPROVER_file_local_http_client_c_httpParserOnHeadersCompleteCallback --remove-function-body __CPROVER_file_local_http_client_c_httpParserOnMessageBeginCallback --remove-function-body __CPROVER_file_local_http_client_c_httpParserOnMessageCompleteCallback --remove-function-body memcpy /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/gotos/project1.goto /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/gotos/project2.goto 2>&1 | tee  /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/logs/project2.txt; exit ${PIPESTATUS[0]}
+Reading GOTO program from '/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/gotos/project1.goto'
+Removing body of __CPROVER_file_local_http_client_c_findHeaderFieldParserCallback
+Removing body of __CPROVER_file_local_http_client_c_findHeaderValueParserCallback
+Removing body of __CPROVER_file_local_http_client_c_httpParserOnBodyCallback
+Removing body of __CPROVER_file_local_http_client_c_httpParserOnHeaderFieldCallback
+Removing body of __CPROVER_file_local_http_client_c_httpParserOnHeaderValueCallback
+Removing body of __CPROVER_file_local_http_client_c_httpParserOnStatusCallback
+Removing body of __CPROVER_file_local_http_client_c_httpParserOnHeadersCompleteCallback
+Removing body of __CPROVER_file_local_http_client_c_httpParserOnMessageBeginCallback
+Removing body of __CPROVER_file_local_http_client_c_httpParserOnMessageCompleteCallback
+No function memcpy in goto program
+Writing GOTO program to '/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/gotos/project2.goto'
+goto-cc  --function harness /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/gotos/proof2.goto /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/gotos/project2.goto -o /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/gotos/HTTPClient_InitializeRequestHeaders_harness1.goto 2>&1 | tee  /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/logs/HTTPClient_InitializeRequestHeaders_harness1.txt; exit ${PIPESTATUS[0]}
+goto-instrument   /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/gotos/HTTPClient_InitializeRequestHeaders_harness1.goto /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/gotos/HTTPClient_InitializeRequestHeaders_harness2.goto 2>&1 | tee  /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/logs/HTTPClient_InitializeRequestHeaders_harness2.txt; exit ${PIPESTATUS[0]}
+Reading GOTO program from '/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/gotos/HTTPClient_InitializeRequestHeaders_harness1.goto'
+Writing GOTO program to '/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/gotos/HTTPClient_InitializeRequestHeaders_harness2.goto'
+goto-instrument  --drop-unused-functions /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/gotos/HTTPClient_InitializeRequestHeaders_harness2.goto /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/gotos/HTTPClient_InitializeRequestHeaders_harness3.goto 2>&1 | tee  /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/logs/HTTPClient_InitializeRequestHeaders_harness3.txt; exit ${PIPESTATUS[0]}
+Reading GOTO program from '/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/gotos/HTTPClient_InitializeRequestHeaders_harness2.goto'
+Function Pointer Removal
+file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c line 492 function processCompleteHeader: replacing function pointer by 0 possible targets
+file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c line 1546 function sendHttpData: replacing function pointer by 8 possible targets
+file /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c line 1690 function receiveHttpData: replacing function pointer by 8 possible targets
+Virtual function removal
+Cleaning inline assembler statements
+Removing unused functions
+Dropping 45 of 59 functions (14 used)
+Writing GOTO program to '/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/gotos/HTTPClient_InitializeRequestHeaders_harness3.goto'
+goto-instrument  --slice-global-inits /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/gotos/HTTPClient_InitializeRequestHeaders_harness3.goto /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/gotos/HTTPClient_InitializeRequestHeaders_harness4.goto 2>&1 | tee  /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/logs/HTTPClient_InitializeRequestHeaders_harness4.txt; exit ${PIPESTATUS[0]}
+Reading GOTO program from '/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/gotos/HTTPClient_InitializeRequestHeaders_harness3.goto'
+Slicing away initializations of unused global variables
+Writing GOTO program to '/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/gotos/HTTPClient_InitializeRequestHeaders_harness4.goto'
+cp /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/gotos/HTTPClient_InitializeRequestHeaders_harness4.goto /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/gotos/HTTPClient_InitializeRequestHeaders_harness.goto
+cbmc  --flush --unwind 1 --unwindset strncmp.0:5 --object-bits 8 --bounds-check --conversion-check --div-by-zero-check --float-overflow-check --nan-check --pointer-check --pointer-overflow-check --signed-overflow-check --undefined-shift-check --unsigned-overflow-check --unwinding-assertions --trace /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/gotos/HTTPClient_InitializeRequestHeaders_harness.goto 2>&1 | tee  /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/logs/result.txt; if [ ${PIPESTATUS[0]} -ne 10 ]; then exit ${PIPESTATUS[0]}; fi
+CBMC version 5.12 (cbmc-5.12.5) 64-bit x86_64 macos
+Reading GOTO program from file
+Reading: /Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/gotos/HTTPClient_InitializeRequestHeaders_harness.goto
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Running with 8 object bits, 56 offset bits (user-specified)
+Starting Bounded Model Checking
+Unwinding loop strncmp.0 iteration 1 file <builtin-library-strncmp> line 42 function strncmp thread 0
+Unwinding loop strncmp.0 iteration 2 file <builtin-library-strncmp> line 42 function strncmp thread 0
+Unwinding loop strncmp.0 iteration 3 file <builtin-library-strncmp> line 42 function strncmp thread 0
+Unwinding loop strncmp.0 iteration 1 file <builtin-library-strncmp> line 42 function strncmp thread 0
+Unwinding loop strncmp.0 iteration 2 file <builtin-library-strncmp> line 42 function strncmp thread 0
+Unwinding loop strncmp.0 iteration 3 file <builtin-library-strncmp> line 42 function strncmp thread 0
+Unwinding loop strncmp.0 iteration 1 file <builtin-library-strncmp> line 42 function strncmp thread 0
+Unwinding loop strncmp.0 iteration 2 file <builtin-library-strncmp> line 42 function strncmp thread 0
+Unwinding loop strncmp.0 iteration 3 file <builtin-library-strncmp> line 42 function strncmp thread 0
+size of program expression: 1739 steps
+simple slicing removed 21 assignments
+Generated 787 VCC(s), 594 remaining after simplification
+Passing problem to propositional reduction
+converting SSA
+Running propositional reduction
+Post-processing
+Solving with MiniSAT 2.2.1 with simplifier
+72832 variables, 278239 clauses
+SAT checker: instance is UNSATISFIABLE
+Runtime decision procedure: 168.911s
+
+** Results:
+/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/../../sources/http_cbmc_state.c function allocateHttpRequestHeaders
+[allocateHttpRequestHeaders.overflow.1] line 22 arithmetic overflow on signed + in 8 + 1: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.1] line 22 dereference failure: pointer invalid in pRequestHeaders->bufferLen: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.2] line 22 dereference failure: pointer NULL in pRequestHeaders->bufferLen: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.3] line 22 dereference failure: deallocated dynamic object in pRequestHeaders->bufferLen: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.4] line 22 dereference failure: dead object in pRequestHeaders->bufferLen: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.5] line 22 dereference failure: pointer outside dynamic object bounds in pRequestHeaders->bufferLen: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.6] line 22 dereference failure: pointer outside object bounds in pRequestHeaders->bufferLen: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.7] line 22 dereference failure: invalid integer address in pRequestHeaders->bufferLen: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.8] line 23 dereference failure: pointer invalid in pRequestHeaders->pBuffer: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.9] line 23 dereference failure: pointer NULL in pRequestHeaders->pBuffer: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.10] line 23 dereference failure: deallocated dynamic object in pRequestHeaders->pBuffer: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.11] line 23 dereference failure: dead object in pRequestHeaders->pBuffer: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.12] line 23 dereference failure: pointer outside dynamic object bounds in pRequestHeaders->pBuffer: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.13] line 23 dereference failure: pointer outside object bounds in pRequestHeaders->pBuffer: SUCCESS
+[allocateHttpRequestHeaders.pointer_dereference.14] line 23 dereference failure: invalid integer address in pRequestHeaders->pBuffer: SUCCESS
+
+/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/../../sources/http_cbmc_state.c function allocateHttpRequestInfo
+[allocateHttpRequestInfo.overflow.1] line 51 arithmetic overflow on signed + in 8 + 1: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.1] line 51 dereference failure: pointer invalid in pRequestInfo->methodLen: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.2] line 51 dereference failure: pointer NULL in pRequestInfo->methodLen: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.3] line 51 dereference failure: deallocated dynamic object in pRequestInfo->methodLen: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.4] line 51 dereference failure: dead object in pRequestInfo->methodLen: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.5] line 51 dereference failure: pointer outside dynamic object bounds in pRequestInfo->methodLen: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.6] line 51 dereference failure: pointer outside object bounds in pRequestInfo->methodLen: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.7] line 51 dereference failure: invalid integer address in pRequestInfo->methodLen: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.8] line 52 dereference failure: pointer invalid in pRequestInfo->method: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.9] line 52 dereference failure: pointer NULL in pRequestInfo->method: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.10] line 52 dereference failure: deallocated dynamic object in pRequestInfo->method: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.11] line 52 dereference failure: dead object in pRequestInfo->method: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.12] line 52 dereference failure: pointer outside dynamic object bounds in pRequestInfo->method: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.13] line 52 dereference failure: pointer outside object bounds in pRequestInfo->method: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.14] line 52 dereference failure: invalid integer address in pRequestInfo->method: SUCCESS
+[allocateHttpRequestInfo.overflow.2] line 54 arithmetic overflow on signed + in 8 + 1: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.15] line 54 dereference failure: pointer invalid in pRequestInfo->hostLen: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.16] line 54 dereference failure: pointer NULL in pRequestInfo->hostLen: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.17] line 54 dereference failure: deallocated dynamic object in pRequestInfo->hostLen: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.18] line 54 dereference failure: dead object in pRequestInfo->hostLen: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.19] line 54 dereference failure: pointer outside dynamic object bounds in pRequestInfo->hostLen: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.20] line 54 dereference failure: pointer outside object bounds in pRequestInfo->hostLen: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.21] line 54 dereference failure: invalid integer address in pRequestInfo->hostLen: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.22] line 55 dereference failure: pointer invalid in pRequestInfo->pHost: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.23] line 55 dereference failure: pointer NULL in pRequestInfo->pHost: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.24] line 55 dereference failure: deallocated dynamic object in pRequestInfo->pHost: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.25] line 55 dereference failure: dead object in pRequestInfo->pHost: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.26] line 55 dereference failure: pointer outside dynamic object bounds in pRequestInfo->pHost: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.27] line 55 dereference failure: pointer outside object bounds in pRequestInfo->pHost: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.28] line 55 dereference failure: invalid integer address in pRequestInfo->pHost: SUCCESS
+[allocateHttpRequestInfo.overflow.3] line 57 arithmetic overflow on signed + in 8 + 1: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.29] line 57 dereference failure: pointer invalid in pRequestInfo->pathLen: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.30] line 57 dereference failure: pointer NULL in pRequestInfo->pathLen: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.31] line 57 dereference failure: deallocated dynamic object in pRequestInfo->pathLen: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.32] line 57 dereference failure: dead object in pRequestInfo->pathLen: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.33] line 57 dereference failure: pointer outside dynamic object bounds in pRequestInfo->pathLen: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.34] line 57 dereference failure: pointer outside object bounds in pRequestInfo->pathLen: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.35] line 57 dereference failure: invalid integer address in pRequestInfo->pathLen: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.36] line 58 dereference failure: pointer invalid in pRequestInfo->pPath: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.37] line 58 dereference failure: pointer NULL in pRequestInfo->pPath: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.38] line 58 dereference failure: deallocated dynamic object in pRequestInfo->pPath: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.39] line 58 dereference failure: dead object in pRequestInfo->pPath: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.40] line 58 dereference failure: pointer outside dynamic object bounds in pRequestInfo->pPath: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.41] line 58 dereference failure: pointer outside object bounds in pRequestInfo->pPath: SUCCESS
+[allocateHttpRequestInfo.pointer_dereference.42] line 58 dereference failure: invalid integer address in pRequestInfo->pPath: SUCCESS
+
+/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/../../sources/http_cbmc_state.c function isValidHttpRequestHeaders
+[isValidHttpRequestHeaders.overflow.1] line 35 arithmetic overflow on signed + in 8 + 1: SUCCESS
+[isValidHttpRequestHeaders.pointer_dereference.1] line 35 dereference failure: pointer invalid in pRequestHeaders->bufferLen: SUCCESS
+[isValidHttpRequestHeaders.pointer_dereference.2] line 35 dereference failure: pointer NULL in pRequestHeaders->bufferLen: SUCCESS
+[isValidHttpRequestHeaders.pointer_dereference.3] line 35 dereference failure: deallocated dynamic object in pRequestHeaders->bufferLen: SUCCESS
+[isValidHttpRequestHeaders.pointer_dereference.4] line 35 dereference failure: dead object in pRequestHeaders->bufferLen: SUCCESS
+[isValidHttpRequestHeaders.pointer_dereference.5] line 35 dereference failure: pointer outside dynamic object bounds in pRequestHeaders->bufferLen: SUCCESS
+[isValidHttpRequestHeaders.pointer_dereference.6] line 35 dereference failure: pointer outside object bounds in pRequestHeaders->bufferLen: SUCCESS
+[isValidHttpRequestHeaders.pointer_dereference.7] line 35 dereference failure: invalid integer address in pRequestHeaders->bufferLen: SUCCESS
+[isValidHttpRequestHeaders.pointer_dereference.8] line 36 dereference failure: pointer outside dynamic object bounds in pRequestHeaders->headersLen: SUCCESS
+[isValidHttpRequestHeaders.pointer_dereference.9] line 36 dereference failure: pointer outside object bounds in pRequestHeaders->headersLen: SUCCESS
+[isValidHttpRequestHeaders.pointer_dereference.10] line 36 dereference failure: invalid integer address in pRequestHeaders->headersLen: SUCCESS
+
+/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/../../sources/http_cbmc_state.c function isValidHttpRequestInfo
+[isValidHttpRequestInfo.overflow.1] line 70 arithmetic overflow on signed + in 8 + 1: SUCCESS
+[isValidHttpRequestInfo.pointer_dereference.1] line 70 dereference failure: pointer invalid in pRequestInfo->methodLen: SUCCESS
+[isValidHttpRequestInfo.pointer_dereference.2] line 70 dereference failure: pointer NULL in pRequestInfo->methodLen: SUCCESS
+[isValidHttpRequestInfo.pointer_dereference.3] line 70 dereference failure: deallocated dynamic object in pRequestInfo->methodLen: SUCCESS
+[isValidHttpRequestInfo.pointer_dereference.4] line 70 dereference failure: dead object in pRequestInfo->methodLen: SUCCESS
+[isValidHttpRequestInfo.pointer_dereference.5] line 70 dereference failure: pointer outside dynamic object bounds in pRequestInfo->methodLen: SUCCESS
+[isValidHttpRequestInfo.pointer_dereference.6] line 70 dereference failure: pointer outside object bounds in pRequestInfo->methodLen: SUCCESS
+[isValidHttpRequestInfo.pointer_dereference.7] line 70 dereference failure: invalid integer address in pRequestInfo->methodLen: SUCCESS
+[isValidHttpRequestInfo.pointer_dereference.8] line 71 dereference failure: pointer outside dynamic object bounds in pRequestInfo->hostLen: SUCCESS
+[isValidHttpRequestInfo.pointer_dereference.9] line 71 dereference failure: pointer outside object bounds in pRequestInfo->hostLen: SUCCESS
+[isValidHttpRequestInfo.pointer_dereference.10] line 71 dereference failure: invalid integer address in pRequestInfo->hostLen: SUCCESS
+[isValidHttpRequestInfo.overflow.2] line 72 arithmetic overflow on signed + in 8 + 1: SUCCESS
+[isValidHttpRequestInfo.pointer_dereference.11] line 72 dereference failure: pointer invalid in pRequestInfo->pathLen: SUCCESS
+[isValidHttpRequestInfo.pointer_dereference.12] line 72 dereference failure: pointer NULL in pRequestInfo->pathLen: SUCCESS
+[isValidHttpRequestInfo.pointer_dereference.13] line 72 dereference failure: deallocated dynamic object in pRequestInfo->pathLen: SUCCESS
+[isValidHttpRequestInfo.pointer_dereference.14] line 72 dereference failure: dead object in pRequestInfo->pathLen: SUCCESS
+[isValidHttpRequestInfo.pointer_dereference.15] line 72 dereference failure: pointer outside dynamic object bounds in pRequestInfo->pathLen: SUCCESS
+[isValidHttpRequestInfo.pointer_dereference.16] line 72 dereference failure: pointer outside object bounds in pRequestInfo->pathLen: SUCCESS
+[isValidHttpRequestInfo.pointer_dereference.17] line 72 dereference failure: invalid integer address in pRequestInfo->pathLen: SUCCESS
+
+/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/../../sources/http_cbmc_state.c function mallocCanFail
+[mallocCanFail.assertion.1] line 9 mallocCanFail size is too big: SUCCESS
+[mallocCanFail.overflow.1] line 9 arithmetic overflow on signed + in 8 + 1: SUCCESS
+
+/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/cbmc/proofs/HTTPClient_InitializeRequestHeaders/../../stubs/memcpy.c function __builtin___memcpy_chk
+[__builtin___memcpy_chk.assertion.1] line 36 write: SUCCESS
+[__builtin___memcpy_chk.overflow.1] line 36 arithmetic overflow on signed to unsigned type conversion in (size_t)POINTER_OFFSET(dest): SUCCESS
+[__builtin___memcpy_chk.overflow.2] line 36 arithmetic overflow on unsigned + in (size_t)POINTER_OFFSET(dest) + n: SUCCESS
+[__builtin___memcpy_chk.overflow.3] line 36 arithmetic overflow on signed to unsigned type conversion in (size_t)POINTER_OFFSET(dest): SUCCESS
+[__builtin___memcpy_chk.overflow.4] line 36 arithmetic overflow on unsigned + in (size_t)POINTER_OFFSET(dest) + n: SUCCESS
+[__builtin___memcpy_chk.assertion.2] line 37 read: SUCCESS
+[__builtin___memcpy_chk.overflow.5] line 37 arithmetic overflow on signed to unsigned type conversion in (size_t)POINTER_OFFSET(src): SUCCESS
+[__builtin___memcpy_chk.overflow.6] line 37 arithmetic overflow on unsigned + in (size_t)POINTER_OFFSET(src) + n: SUCCESS
+[__builtin___memcpy_chk.overflow.7] line 37 arithmetic overflow on signed to unsigned type conversion in (size_t)POINTER_OFFSET(src): SUCCESS
+[__builtin___memcpy_chk.overflow.8] line 37 arithmetic overflow on unsigned + in (size_t)POINTER_OFFSET(src) + n: SUCCESS
+
+/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function HTTPClient_InitializeRequestHeaders
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.1] line 1281 dereference failure: pointer invalid in pRequestHeaders->pBuffer: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.2] line 1281 dereference failure: pointer NULL in pRequestHeaders->pBuffer: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.3] line 1281 dereference failure: deallocated dynamic object in pRequestHeaders->pBuffer: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.4] line 1281 dereference failure: dead object in pRequestHeaders->pBuffer: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.5] line 1281 dereference failure: pointer outside dynamic object bounds in pRequestHeaders->pBuffer: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.6] line 1281 dereference failure: pointer outside object bounds in pRequestHeaders->pBuffer: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.7] line 1281 dereference failure: invalid integer address in pRequestHeaders->pBuffer: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.8] line 1291 dereference failure: pointer invalid in pRequestInfo->method: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.9] line 1291 dereference failure: pointer NULL in pRequestInfo->method: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.10] line 1291 dereference failure: deallocated dynamic object in pRequestInfo->method: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.11] line 1291 dereference failure: dead object in pRequestInfo->method: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.12] line 1291 dereference failure: pointer outside dynamic object bounds in pRequestInfo->method: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.13] line 1291 dereference failure: pointer outside object bounds in pRequestInfo->method: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.14] line 1291 dereference failure: invalid integer address in pRequestInfo->method: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.15] line 1296 dereference failure: pointer invalid in pRequestInfo->pHost: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.16] line 1296 dereference failure: pointer NULL in pRequestInfo->pHost: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.17] line 1296 dereference failure: deallocated dynamic object in pRequestInfo->pHost: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.18] line 1296 dereference failure: dead object in pRequestInfo->pHost: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.19] line 1296 dereference failure: pointer outside dynamic object bounds in pRequestInfo->pHost: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.20] line 1296 dereference failure: pointer outside object bounds in pRequestInfo->pHost: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.21] line 1296 dereference failure: invalid integer address in pRequestInfo->pHost: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.22] line 1301 dereference failure: pointer invalid in pRequestInfo->methodLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.23] line 1301 dereference failure: pointer NULL in pRequestInfo->methodLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.24] line 1301 dereference failure: deallocated dynamic object in pRequestInfo->methodLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.25] line 1301 dereference failure: dead object in pRequestInfo->methodLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.26] line 1301 dereference failure: pointer outside dynamic object bounds in pRequestInfo->methodLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.27] line 1301 dereference failure: pointer outside object bounds in pRequestInfo->methodLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.28] line 1301 dereference failure: invalid integer address in pRequestInfo->methodLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.29] line 1306 dereference failure: pointer invalid in pRequestInfo->hostLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.30] line 1306 dereference failure: pointer NULL in pRequestInfo->hostLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.31] line 1306 dereference failure: deallocated dynamic object in pRequestInfo->hostLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.32] line 1306 dereference failure: dead object in pRequestInfo->hostLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.33] line 1306 dereference failure: pointer outside dynamic object bounds in pRequestInfo->hostLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.34] line 1306 dereference failure: pointer outside object bounds in pRequestInfo->hostLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.35] line 1306 dereference failure: invalid integer address in pRequestInfo->hostLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.36] line 1319 dereference failure: pointer invalid in pRequestHeaders->headersLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.37] line 1319 dereference failure: pointer NULL in pRequestHeaders->headersLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.38] line 1319 dereference failure: deallocated dynamic object in pRequestHeaders->headersLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.39] line 1319 dereference failure: dead object in pRequestHeaders->headersLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.40] line 1319 dereference failure: pointer outside dynamic object bounds in pRequestHeaders->headersLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.41] line 1319 dereference failure: pointer outside object bounds in pRequestHeaders->headersLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.42] line 1319 dereference failure: invalid integer address in pRequestHeaders->headersLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.43] line 1323 dereference failure: pointer invalid in pRequestInfo->method: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.44] line 1323 dereference failure: pointer NULL in pRequestInfo->method: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.45] line 1323 dereference failure: deallocated dynamic object in pRequestInfo->method: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.46] line 1323 dereference failure: dead object in pRequestInfo->method: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.47] line 1323 dereference failure: pointer outside dynamic object bounds in pRequestInfo->method: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.48] line 1323 dereference failure: pointer outside object bounds in pRequestInfo->method: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.49] line 1323 dereference failure: invalid integer address in pRequestInfo->method: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.50] line 1324 dereference failure: pointer NULL in pRequestInfo->methodLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.51] line 1324 dereference failure: pointer outside dynamic object bounds in pRequestInfo->methodLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.52] line 1324 dereference failure: pointer outside object bounds in pRequestInfo->methodLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.53] line 1324 dereference failure: invalid integer address in pRequestInfo->methodLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.54] line 1325 dereference failure: pointer outside dynamic object bounds in pRequestInfo->pPath: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.55] line 1325 dereference failure: pointer outside object bounds in pRequestInfo->pPath: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.56] line 1325 dereference failure: invalid integer address in pRequestInfo->pPath: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.57] line 1326 dereference failure: pointer outside dynamic object bounds in pRequestInfo->pathLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.58] line 1326 dereference failure: pointer outside object bounds in pRequestInfo->pathLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.59] line 1326 dereference failure: invalid integer address in pRequestInfo->pathLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.overflow.1] line 1334 arithmetic overflow on unsigned - in sizeof(char [11l]) /*11ul*/  - (unsigned long int)1u: SUCCESS
+[HTTPClient_InitializeRequestHeaders.overflow.2] line 1336 arithmetic overflow on unsigned - in sizeof(char [17l]) /*17ul*/  - (unsigned long int)1u: SUCCESS
+[HTTPClient_InitializeRequestHeaders.overflow.3] line 1344 arithmetic overflow on unsigned - in sizeof(char [5l]) /*5ul*/  - (unsigned long int)1u: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.60] line 1345 dereference failure: pointer invalid in pRequestInfo->pHost: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.61] line 1345 dereference failure: pointer NULL in pRequestInfo->pHost: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.62] line 1345 dereference failure: deallocated dynamic object in pRequestInfo->pHost: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.63] line 1345 dereference failure: dead object in pRequestInfo->pHost: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.64] line 1345 dereference failure: pointer outside dynamic object bounds in pRequestInfo->pHost: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.65] line 1345 dereference failure: pointer outside object bounds in pRequestInfo->pHost: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.66] line 1345 dereference failure: invalid integer address in pRequestInfo->pHost: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.67] line 1346 dereference failure: pointer NULL in pRequestInfo->hostLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.68] line 1346 dereference failure: pointer outside dynamic object bounds in pRequestInfo->hostLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.69] line 1346 dereference failure: pointer outside object bounds in pRequestInfo->hostLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.70] line 1346 dereference failure: invalid integer address in pRequestInfo->hostLen: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.71] line 1351 dereference failure: pointer invalid in pRequestInfo->reqFlags: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.72] line 1351 dereference failure: pointer NULL in pRequestInfo->reqFlags: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.73] line 1351 dereference failure: deallocated dynamic object in pRequestInfo->reqFlags: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.74] line 1351 dereference failure: dead object in pRequestInfo->reqFlags: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.75] line 1351 dereference failure: pointer outside dynamic object bounds in pRequestInfo->reqFlags: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.76] line 1351 dereference failure: pointer outside object bounds in pRequestInfo->reqFlags: SUCCESS
+[HTTPClient_InitializeRequestHeaders.pointer_dereference.77] line 1351 dereference failure: invalid integer address in pRequestInfo->reqFlags: SUCCESS
+[HTTPClient_InitializeRequestHeaders.overflow.4] line 1356 arithmetic overflow on unsigned - in sizeof(char [11l]) /*11ul*/  - (unsigned long int)1u: SUCCESS
+
+/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function addHeader
+[addHeader.overflow.1] line 1125 arithmetic overflow on unsigned to signed type conversion in (signed long int)pRequestHeaders->headersLen: SUCCESS
+[addHeader.overflow.2] line 1125 pointer arithmetic overflow on + in pRequestHeaders->pBuffer + (signed long int)pRequestHeaders->headersLen: SUCCESS
+[addHeader.pointer_dereference.1] line 1125 dereference failure: pointer invalid in pRequestHeaders->pBuffer: SUCCESS
+[addHeader.pointer_dereference.2] line 1125 dereference failure: pointer NULL in pRequestHeaders->pBuffer: SUCCESS
+[addHeader.pointer_dereference.3] line 1125 dereference failure: deallocated dynamic object in pRequestHeaders->pBuffer: SUCCESS
+[addHeader.pointer_dereference.4] line 1125 dereference failure: dead object in pRequestHeaders->pBuffer: SUCCESS
+[addHeader.pointer_dereference.5] line 1125 dereference failure: pointer outside dynamic object bounds in pRequestHeaders->pBuffer: SUCCESS
+[addHeader.pointer_dereference.6] line 1125 dereference failure: pointer outside object bounds in pRequestHeaders->pBuffer: SUCCESS
+[addHeader.pointer_dereference.7] line 1125 dereference failure: invalid integer address in pRequestHeaders->pBuffer: SUCCESS
+[addHeader.pointer_dereference.8] line 1125 dereference failure: pointer NULL in pRequestHeaders->headersLen: SUCCESS
+[addHeader.pointer_dereference.9] line 1125 dereference failure: pointer outside dynamic object bounds in pRequestHeaders->headersLen: SUCCESS
+[addHeader.pointer_dereference.10] line 1125 dereference failure: pointer outside object bounds in pRequestHeaders->headersLen: SUCCESS
+[addHeader.pointer_dereference.11] line 1125 dereference failure: invalid integer address in pRequestHeaders->headersLen: SUCCESS
+[addHeader.assertion.1] line 1129 assertion pRequestHeaders != NULL: SUCCESS
+[addHeader.assertion.2] line 1130 assertion pRequestHeaders->pBuffer != NULL: SUCCESS
+[addHeader.assertion.3] line 1131 assertion pField != NULL: SUCCESS
+[addHeader.assertion.4] line 1132 assertion pValue != NULL: SUCCESS
+[addHeader.assertion.5] line 1133 assertion fieldLen != 0u: SUCCESS
+[addHeader.assertion.6] line 1134 assertion valueLen != 0u: SUCCESS
+[addHeader.overflow.3] line 1141 arithmetic overflow on unsigned - in sizeof(char [5l]) /*5ul*/  - (unsigned long int)1u: SUCCESS
+[addHeader.overflow.4] line 1142 pointer arithmetic overflow on - in (char *)pBufferCur - (signed long int)(sizeof(char [5l]) /*5ul*/  - (unsigned long int)1u): SUCCESS
+[addHeader.overflow.5] line 1145 arithmetic overflow on unsigned - in sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u: SUCCESS
+[addHeader.overflow.6] line 1145 arithmetic overflow on unsigned - in backtrackHeaderLen - (sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u): SUCCESS
+[addHeader.overflow.7] line 1146 pointer arithmetic overflow on - in pBufferCur - (signed long int)(sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u): SUCCESS
+[addHeader.overflow.8] line 1150 arithmetic overflow on unsigned - in sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u: SUCCESS
+[addHeader.overflow.9] line 1150 arithmetic overflow on unsigned + in fieldLen + (sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u): SUCCESS
+[addHeader.overflow.10] line 1150 arithmetic overflow on unsigned + in fieldLen + (sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u) + valueLen: SUCCESS
+[addHeader.overflow.11] line 1150 arithmetic overflow on unsigned + in fieldLen + (sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u) + valueLen + (sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u): SUCCESS
+[addHeader.overflow.12] line 1151 arithmetic overflow on unsigned + in fieldLen + (sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u) + valueLen + (sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u) + (sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u): SUCCESS
+[addHeader.overflow.13] line 1156 arithmetic overflow on unsigned + in backtrackHeaderLen + toAddLen: SUCCESS
+[addHeader.pointer_dereference.12] line 1156 dereference failure: pointer invalid in pRequestHeaders->bufferLen: SUCCESS
+[addHeader.pointer_dereference.13] line 1156 dereference failure: pointer NULL in pRequestHeaders->bufferLen: SUCCESS
+[addHeader.pointer_dereference.14] line 1156 dereference failure: deallocated dynamic object in pRequestHeaders->bufferLen: SUCCESS
+[addHeader.pointer_dereference.15] line 1156 dereference failure: dead object in pRequestHeaders->bufferLen: SUCCESS
+[addHeader.pointer_dereference.16] line 1156 dereference failure: pointer outside dynamic object bounds in pRequestHeaders->bufferLen: SUCCESS
+[addHeader.pointer_dereference.17] line 1156 dereference failure: pointer outside object bounds in pRequestHeaders->bufferLen: SUCCESS
+[addHeader.pointer_dereference.18] line 1156 dereference failure: invalid integer address in pRequestHeaders->bufferLen: SUCCESS
+[addHeader.overflow.14] line 1162 arithmetic overflow on unsigned to signed type conversion in (signed long int)fieldLen: SUCCESS
+[addHeader.overflow.15] line 1162 pointer arithmetic overflow on + in pBufferCur + (signed long int)fieldLen: SUCCESS
+[addHeader.overflow.16] line 1165 arithmetic overflow on unsigned - in sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u: SUCCESS
+[addHeader.overflow.17] line 1168 arithmetic overflow on unsigned - in sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u: SUCCESS
+[addHeader.overflow.18] line 1168 pointer arithmetic overflow on + in pBufferCur + (signed long int)(sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u): SUCCESS
+[addHeader.overflow.19] line 1172 arithmetic overflow on unsigned to signed type conversion in (signed long int)valueLen: SUCCESS
+[addHeader.overflow.20] line 1172 pointer arithmetic overflow on + in pBufferCur + (signed long int)valueLen: SUCCESS
+[addHeader.overflow.21] line 1175 arithmetic overflow on unsigned - in sizeof(char [5l]) /*5ul*/  - (unsigned long int)1u: SUCCESS
+[addHeader.overflow.22] line 1180 arithmetic overflow on unsigned + in backtrackHeaderLen + toAddLen: SUCCESS
+[addHeader.pointer_dereference.19] line 1180 dereference failure: pointer invalid in pRequestHeaders->headersLen: SUCCESS
+[addHeader.pointer_dereference.20] line 1180 dereference failure: pointer NULL in pRequestHeaders->headersLen: SUCCESS
+[addHeader.pointer_dereference.21] line 1180 dereference failure: deallocated dynamic object in pRequestHeaders->headersLen: SUCCESS
+[addHeader.pointer_dereference.22] line 1180 dereference failure: dead object in pRequestHeaders->headersLen: SUCCESS
+[addHeader.pointer_dereference.23] line 1180 dereference failure: pointer outside dynamic object bounds in pRequestHeaders->headersLen: SUCCESS
+[addHeader.pointer_dereference.24] line 1180 dereference failure: pointer outside object bounds in pRequestHeaders->headersLen: SUCCESS
+[addHeader.pointer_dereference.25] line 1180 dereference failure: invalid integer address in pRequestHeaders->headersLen: SUCCESS
+
+/Users/rvt/aws-iot-device-sdk-embedded-C-jeppu/libraries/standard/http/src/http_client.c function writeRequestLine
+[writeRequestLine.pointer_dereference.1] line 1204 dereference failure: pointer invalid in pRequestHeaders->pBuffer: SUCCESS
+[writeRequestLine.pointer_dereference.2] line 1204 dereference failure: pointer NULL in pRequestHeaders->pBuffer: SUCCESS
+[writeRequestLine.pointer_dereference.3] line 1204 dereference failure: deallocated dynamic object in pRequestHeaders->pBuffer: SUCCESS
+[writeRequestLine.pointer_dereference.4] line 1204 dereference failure: dead object in pRequestHeaders->pBuffer: SUCCESS
+[writeRequestLine.pointer_dereference.5] line 1204 dereference failure: pointer outside dynamic object bounds in pRequestHeaders->pBuffer: SUCCESS
+[writeRequestLine.pointer_dereference.6] line 1204 dereference failure: pointer outside object bounds in pRequestHeaders->pBuffer: SUCCESS
+[writeRequestLine.pointer_dereference.7] line 1204 dereference failure: invalid integer address in pRequestHeaders->pBuffer: SUCCESS
+[writeRequestLine.overflow.1] line 1205 arithmetic overflow on unsigned - in sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u: SUCCESS
+[writeRequestLine.overflow.2] line 1205 arithmetic overflow on unsigned + in methodLen + (sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u): SUCCESS
+[writeRequestLine.overflow.3] line 1205 arithmetic overflow on unsigned + in methodLen + (sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u) + (sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u): SUCCESS
+[writeRequestLine.overflow.4] line 1205 arithmetic overflow on unsigned - in sizeof(char [9l]) /*9ul*/  - (unsigned long int)1u: SUCCESS
+[writeRequestLine.overflow.5] line 1205 arithmetic overflow on unsigned + in methodLen + (sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u) + (sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u) + (sizeof(char [9l]) /*9ul*/  - (unsigned long int)1u): SUCCESS
+[writeRequestLine.overflow.6] line 1205 arithmetic overflow on unsigned - in sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u: SUCCESS
+[writeRequestLine.overflow.7] line 1205 arithmetic overflow on unsigned + in methodLen + (sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u) + (sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u) + (sizeof(char [9l]) /*9ul*/  - (unsigned long int)1u) + (sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u): SUCCESS
+[writeRequestLine.assertion.1] line 1211 assertion pRequestHeaders != NULL: SUCCESS
+[writeRequestLine.assertion.2] line 1212 assertion pRequestHeaders->pBuffer != NULL: SUCCESS
+[writeRequestLine.assertion.3] line 1213 assertion pMethod != NULL: SUCCESS
+[writeRequestLine.assertion.4] line 1214 assertion methodLen != 0u: SUCCESS
+[writeRequestLine.overflow.8] line 1218 arithmetic overflow on unsigned - in sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u: SUCCESS
+[writeRequestLine.overflow.9] line 1218 arithmetic overflow on unsigned + in toAddLen + (pPath == ((const char *)NULL) || pathLen == (unsigned long int)0u ? sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u : pathLen): SUCCESS
+[writeRequestLine.overflow.10] line 1220 arithmetic overflow on unsigned + in toAddLen + pRequestHeaders->headersLen: SUCCESS
+[writeRequestLine.pointer_dereference.8] line 1220 dereference failure: pointer NULL in pRequestHeaders->headersLen: SUCCESS
+[writeRequestLine.pointer_dereference.9] line 1220 dereference failure: pointer outside dynamic object bounds in pRequestHeaders->headersLen: SUCCESS
+[writeRequestLine.pointer_dereference.10] line 1220 dereference failure: pointer outside object bounds in pRequestHeaders->headersLen: SUCCESS
+[writeRequestLine.pointer_dereference.11] line 1220 dereference failure: invalid integer address in pRequestHeaders->headersLen: SUCCESS
+[writeRequestLine.pointer_dereference.12] line 1220 dereference failure: pointer outside dynamic object bounds in pRequestHeaders->bufferLen: SUCCESS
+[writeRequestLine.pointer_dereference.13] line 1220 dereference failure: pointer outside object bounds in pRequestHeaders->bufferLen: SUCCESS
+[writeRequestLine.pointer_dereference.14] line 1220 dereference failure: invalid integer address in pRequestHeaders->bufferLen: SUCCESS
+[writeRequestLine.overflow.11] line 1229 arithmetic overflow on unsigned to signed type conversion in (signed long int)methodLen: SUCCESS
+[writeRequestLine.overflow.12] line 1229 pointer arithmetic overflow on + in pBufferCur + (signed long int)methodLen: SUCCESS
+[writeRequestLine.overflow.13] line 1231 arithmetic overflow on unsigned - in sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u: SUCCESS
+[writeRequestLine.overflow.14] line 1233 arithmetic overflow on unsigned - in sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u: SUCCESS
+[writeRequestLine.overflow.15] line 1233 pointer arithmetic overflow on + in pBufferCur + (signed long int)(sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u): SUCCESS
+[writeRequestLine.overflow.16] line 1241 arithmetic overflow on unsigned - in sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u: SUCCESS
+[writeRequestLine.overflow.17] line 1241 pointer arithmetic overflow on + in pBufferCur + (signed long int)(sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u): SUCCESS
+[writeRequestLine.overflow.18] line 1246 arithmetic overflow on unsigned to signed type conversion in (signed long int)pathLen: SUCCESS
+[writeRequestLine.overflow.19] line 1246 pointer arithmetic overflow on + in pBufferCur + (signed long int)pathLen: SUCCESS
+[writeRequestLine.overflow.20] line 1249 arithmetic overflow on unsigned - in sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u: SUCCESS
+[writeRequestLine.overflow.21] line 1252 arithmetic overflow on unsigned - in sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u: SUCCESS
+[writeRequestLine.overflow.22] line 1252 pointer arithmetic overflow on + in pBufferCur + (signed long int)(sizeof(char [2l]) /*2ul*/  - (unsigned long int)1u): SUCCESS
+[writeRequestLine.overflow.23] line 1254 arithmetic overflow on unsigned - in sizeof(char [9l]) /*9ul*/  - (unsigned long int)1u: SUCCESS
+[writeRequestLine.overflow.24] line 1257 arithmetic overflow on unsigned - in sizeof(char [9l]) /*9ul*/  - (unsigned long int)1u: SUCCESS
+[writeRequestLine.overflow.25] line 1257 pointer arithmetic overflow on + in pBufferCur + (signed long int)(sizeof(char [9l]) /*9ul*/  - (unsigned long int)1u): SUCCESS
+[writeRequestLine.overflow.26] line 1259 arithmetic overflow on unsigned - in sizeof(char [3l]) /*3ul*/  - (unsigned long int)1u: SUCCESS
+[writeRequestLine.pointer_dereference.15] line 1262 dereference failure: pointer invalid in pRequestHeaders->headersLen: SUCCESS
+[writeRequestLine.pointer_dereference.16] line 1262 dereference failure: pointer NULL in pRequestHeaders->headersLen: SUCCESS
+[writeRequestLine.pointer_dereference.17] line 1262 dereference failure: deallocated dynamic object in pRequestHeaders->headersLen: SUCCESS
+[writeRequestLine.pointer_dereference.18] line 1262 dereference failure: dead object in pRequestHeaders->headersLen: SUCCESS
+[writeRequestLine.pointer_dereference.19] line 1262 dereference failure: pointer outside dynamic object bounds in pRequestHeaders->headersLen: SUCCESS
+[writeRequestLine.pointer_dereference.20] line 1262 dereference failure: pointer outside object bounds in pRequestHeaders->headersLen: SUCCESS
+[writeRequestLine.pointer_dereference.21] line 1262 dereference failure: invalid integer address in pRequestHeaders->headersLen: SUCCESS
+
+<builtin-library-malloc> function malloc
+[malloc.assertion.1] line 26 max allocation size exceeded: SUCCESS
+[malloc.assertion.2] line 31 max allocation may fail: SUCCESS
+
+<builtin-library-strncmp> function strncmp
+[strncmp.overflow.1] line 28 pointer arithmetic overflow on + in s1 + (signed long int)i: SUCCESS
+[strncmp.pointer_dereference.1] line 28 dereference failure: pointer invalid in s1[(signed long int)i]: SUCCESS
+[strncmp.pointer_dereference.2] line 28 dereference failure: pointer NULL in s1[(signed long int)i]: SUCCESS
+[strncmp.pointer_dereference.3] line 28 dereference failure: deallocated dynamic object in s1[(signed long int)i]: SUCCESS
+[strncmp.pointer_dereference.4] line 28 dereference failure: dead object in s1[(signed long int)i]: SUCCESS
+[strncmp.pointer_dereference.5] line 28 dereference failure: pointer outside dynamic object bounds in s1[(signed long int)i]: SUCCESS
+[strncmp.pointer_dereference.6] line 28 dereference failure: pointer outside object bounds in s1[(signed long int)i]: SUCCESS
+[strncmp.pointer_dereference.7] line 28 dereference failure: invalid integer address in s1[(signed long int)i]: SUCCESS
+[strncmp.overflow.2] line 29 pointer arithmetic overflow on + in s2 + (signed long int)i: SUCCESS
+[strncmp.pointer_dereference.8] line 29 dereference failure: pointer invalid in s2[(signed long int)i]: SUCCESS
+[strncmp.pointer_dereference.9] line 29 dereference failure: pointer NULL in s2[(signed long int)i]: SUCCESS
+[strncmp.pointer_dereference.10] line 29 dereference failure: deallocated dynamic object in s2[(signed long int)i]: SUCCESS
+[strncmp.pointer_dereference.11] line 29 dereference failure: dead object in s2[(signed long int)i]: SUCCESS
+[strncmp.pointer_dereference.12] line 29 dereference failure: pointer outside dynamic object bounds in s2[(signed long int)i]: SUCCESS
+[strncmp.pointer_dereference.13] line 29 dereference failure: pointer outside object bounds in s2[(signed long int)i]: SUCCESS
+[strncmp.pointer_dereference.14] line 29 dereference failure: invalid integer address in s2[(signed long int)i]: SUCCESS
+[strncmp.overflow.3] line 40 arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+
+** 0 of 306 failed (1 iterations)
+VERIFICATION SUCCESSFUL
+
+real	2m49.828s
+user	2m48.221s
+sys	0m1.029s
