@@ -1,0 +1,1090 @@
+[+] Doing ARP/ARPAgeCache
+[+] Time vanilla:
+real	0m2.260s
+[+] Vanilla done for ARP/ARPAgeCache
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m2.285s
+[+] Comby done for ARP/ARPAgeCache
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing ARP/ARPGetCacheEntry/ARPGetCacheEntry__config_ARPGetCacheEntry_LLMNR
+[+] Time vanilla:
+real	0m0.892s
+[+] Vanilla done for ARP/ARPGetCacheEntry/ARPGetCacheEntry__config_ARPGetCacheEntry_LLMNR
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m0.816s
+[+] Comby done for ARP/ARPGetCacheEntry/ARPGetCacheEntry__config_ARPGetCacheEntry_LLMNR
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing ARP/ARPGetCacheEntry/ARPGetCacheEntry__config_ARPGetCacheEntry_REMOTE_LLMNR
+[+] Time vanilla:
+real	0m0.825s
+[+] Vanilla done for ARP/ARPGetCacheEntry/ARPGetCacheEntry__config_ARPGetCacheEntry_REMOTE_LLMNR
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m0.892s
+[+] Comby done for ARP/ARPGetCacheEntry/ARPGetCacheEntry__config_ARPGetCacheEntry_REMOTE_LLMNR
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing ARP/ARPGetCacheEntry/ARPGetCacheEntry__config_ARPGetCacheEntry_STORE_REMOTE
+[+] Time vanilla:
+real	0m0.826s
+[+] Vanilla done for ARP/ARPGetCacheEntry/ARPGetCacheEntry__config_ARPGetCacheEntry_STORE_REMOTE
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m0.796s
+[+] Comby done for ARP/ARPGetCacheEntry/ARPGetCacheEntry__config_ARPGetCacheEntry_STORE_REMOTE
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing ARP/ARPGetCacheEntry/ARPGetCacheEntry__config_ARPGetCacheEntry_default
+[+] Time vanilla:
+real	0m0.812s
+[+] Vanilla done for ARP/ARPGetCacheEntry/ARPGetCacheEntry__config_ARPGetCacheEntry_default
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m0.798s
+[+] Comby done for ARP/ARPGetCacheEntry/ARPGetCacheEntry__config_ARPGetCacheEntry_default
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing ARP/ARPProcessPacket/ARPProcessPacket__config_disableClashDetection
+[+] Time vanilla:
+real	0m0.864s
+[+] Vanilla done for ARP/ARPProcessPacket/ARPProcessPacket__config_disableClashDetection
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m0.851s
+[+] Comby done for ARP/ARPProcessPacket/ARPProcessPacket__config_disableClashDetection
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing ARP/ARPProcessPacket/ARPProcessPacket__config_enableClashDetection
+[+] Time vanilla:
+real	0m0.843s
+[+] Vanilla done for ARP/ARPProcessPacket/ARPProcessPacket__config_enableClashDetection
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m0.841s
+[+] Comby done for ARP/ARPProcessPacket/ARPProcessPacket__config_enableClashDetection
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing ARP/ARPSendGratuitous
+[+] Time vanilla:
+real	0m2.829s
+[+] Vanilla done for ARP/ARPSendGratuitous
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m2.881s
+[+] Comby done for ARP/ARPSendGratuitous
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing ARP/ARP_FreeRTOS_OutputARPRequest/OutputARPRequest__config_CBMC_PROOF_ASSUMPTION_DOES_NOT_HOLD
+[+] Time vanilla:
+real	0m0.846s
+[+] Vanilla done for ARP/ARP_FreeRTOS_OutputARPRequest/OutputARPRequest__config_CBMC_PROOF_ASSUMPTION_DOES_NOT_HOLD
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m0.878s
+[+] Comby done for ARP/ARP_FreeRTOS_OutputARPRequest/OutputARPRequest__config_CBMC_PROOF_ASSUMPTION_DOES_NOT_HOLD
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing ARP/ARP_FreeRTOS_OutputARPRequest/OutputARPRequest__config_CBMC_PROOF_ASSUMPTION_HOLDS_Packet_bytes
+[+] Time vanilla:
+real	0m0.830s
+[+] Vanilla done for ARP/ARP_FreeRTOS_OutputARPRequest/OutputARPRequest__config_CBMC_PROOF_ASSUMPTION_HOLDS_Packet_bytes
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m0.810s
+[+] Comby done for ARP/ARP_FreeRTOS_OutputARPRequest/OutputARPRequest__config_CBMC_PROOF_ASSUMPTION_HOLDS_Packet_bytes
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing ARP/ARP_FreeRTOS_OutputARPRequest/OutputARPRequest__config_CBMC_PROOF_ASSUMPTION_HOLDS_no_packet_bytes
+[+] Time vanilla:
+real	0m0.813s
+[+] Vanilla done for ARP/ARP_FreeRTOS_OutputARPRequest/OutputARPRequest__config_CBMC_PROOF_ASSUMPTION_HOLDS_no_packet_bytes
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m0.831s
+[+] Comby done for ARP/ARP_FreeRTOS_OutputARPRequest/OutputARPRequest__config_CBMC_PROOF_ASSUMPTION_HOLDS_no_packet_bytes
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing ARP/ARP_OutputARPRequest_buffer_alloc1/OutputARPRequest__config_minimal_configuration
+[+] Time vanilla:
+real	0m1.669s
+[+] Vanilla done for ARP/ARP_OutputARPRequest_buffer_alloc1/OutputARPRequest__config_minimal_configuration
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.671s
+[+] Comby done for ARP/ARP_OutputARPRequest_buffer_alloc1/OutputARPRequest__config_minimal_configuration
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing ARP/ARP_OutputARPRequest_buffer_alloc1/OutputARPRequest__config_minimal_configuration_linked_rx_messages
+[+] Time vanilla:
+real	0m1.627s
+[+] Vanilla done for ARP/ARP_OutputARPRequest_buffer_alloc1/OutputARPRequest__config_minimal_configuration_linked_rx_messages
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.683s
+[+] Comby done for ARP/ARP_OutputARPRequest_buffer_alloc1/OutputARPRequest__config_minimal_configuration_linked_rx_messages
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing ARP/ARP_OutputARPRequest_buffer_alloc1/OutputARPRequest__config_minimal_configuration_minimal_packet_size
+[+] Time vanilla:
+real	0m1.677s
+[+] Vanilla done for ARP/ARP_OutputARPRequest_buffer_alloc1/OutputARPRequest__config_minimal_configuration_minimal_packet_size
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.661s
+[+] Comby done for ARP/ARP_OutputARPRequest_buffer_alloc1/OutputARPRequest__config_minimal_configuration_minimal_packet_size
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing ARP/ARPGenerateRequestPacket
+[+] Time vanilla:
+real	0m0.870s
+[+] Vanilla done for ARP/ARPGenerateRequestPacket
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m0.812s
+[+] Comby done for ARP/ARPGenerateRequestPacket
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing ARP/ARPGetCacheEntryByMac
+[+] Time vanilla:
+real	0m0.789s
+[+] Vanilla done for ARP/ARPGetCacheEntryByMac
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m0.776s
+[+] Comby done for ARP/ARPGetCacheEntryByMac
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing ARP/ARPRefreshCacheEntry/ARPRefreshCacheEntry__config_NOT_STORE_REMOTE
+[+] Time vanilla:
+real	0m0.800s
+[+] Vanilla done for ARP/ARPRefreshCacheEntry/ARPRefreshCacheEntry__config_NOT_STORE_REMOTE
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m0.792s
+[+] Comby done for ARP/ARPRefreshCacheEntry/ARPRefreshCacheEntry__config_NOT_STORE_REMOTE
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing ARP/ARPRefreshCacheEntry/ARPRefreshCacheEntry__config_STORE_REMOTE
+[+] Time vanilla:
+real	0m0.815s
+[+] Vanilla done for ARP/ARPRefreshCacheEntry/ARPRefreshCacheEntry__config_STORE_REMOTE
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m0.819s
+[+] Comby done for ARP/ARPRefreshCacheEntry/ARPRefreshCacheEntry__config_STORE_REMOTE
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing ARP/ARP_FreeRTOS_ClearARP
+[+] Time vanilla:
+real	0m0.788s
+[+] Vanilla done for ARP/ARP_FreeRTOS_ClearARP
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m0.793s
+[+] Comby done for ARP/ARP_FreeRTOS_ClearARP
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing ARP/ARP_FreeRTOS_PrintARPCache
+[+] Time vanilla:
+real	0m0.808s
+[+] Vanilla done for ARP/ARP_FreeRTOS_PrintARPCache
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m0.777s
+[+] Comby done for ARP/ARP_FreeRTOS_PrintARPCache
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing ARP/ARP_OutputARPRequest_buffer_alloc2/OutputARPRequest__config_minimal_configuration
+[+] Time vanilla:
+real	0m1.721s
+[+] Vanilla done for ARP/ARP_OutputARPRequest_buffer_alloc2/OutputARPRequest__config_minimal_configuration
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.627s
+[+] Comby done for ARP/ARP_OutputARPRequest_buffer_alloc2/OutputARPRequest__config_minimal_configuration
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing ARP/ARP_OutputARPRequest_buffer_alloc2/OutputARPRequest__config_minimal_configuration_linked_rx_messages
+[+] Time vanilla:
+real	0m1.627s
+[+] Vanilla done for ARP/ARP_OutputARPRequest_buffer_alloc2/OutputARPRequest__config_minimal_configuration_linked_rx_messages
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.619s
+[+] Comby done for ARP/ARP_OutputARPRequest_buffer_alloc2/OutputARPRequest__config_minimal_configuration_linked_rx_messages
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing ARP/ARP_OutputARPRequest_buffer_alloc2/OutputARPRequest__config_minimal_configuration_minimal_packet_size
+[+] Time vanilla:
+real	0m1.620s
+[+] Vanilla done for ARP/ARP_OutputARPRequest_buffer_alloc2/OutputARPRequest__config_minimal_configuration_minimal_packet_size
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.651s
+[+] Comby done for ARP/ARP_OutputARPRequest_buffer_alloc2/OutputARPRequest__config_minimal_configuration_minimal_packet_size
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing CLI/FreeRTOS_CLIGetParameter
+[+] Time vanilla:
+real	0m0.304s
+[+] Vanilla done for CLI/FreeRTOS_CLIGetParameter
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m0.291s
+[+] Comby done for CLI/FreeRTOS_CLIGetParameter
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing CLI/FreeRTOS_CLIProcessCommand
+[+] Time vanilla:
+real	0m0.339s
+[+] Vanilla done for CLI/FreeRTOS_CLIProcessCommand
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m0.331s
+[+] Comby done for CLI/FreeRTOS_CLIProcessCommand
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing DHCP/DHCPProcess
+[+] Time vanilla:
+real	0m1.733s
+[+] Vanilla done for DHCP/DHCPProcess
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.723s
+[+] Comby done for DHCP/DHCPProcess
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing DHCP/IsDHCPSocket
+[+] Time vanilla:
+real	0m0.161s
+[+] Vanilla done for DHCP/IsDHCPSocket
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m0.132s
+[+] Comby done for DHCP/IsDHCPSocket
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing CheckOptions
+[+] Time vanilla:
+real	0m3.109s
+[+] Vanilla done for CheckOptions
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m3.182s
+[+] Comby done for CheckOptions
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing CheckOptionsInner
+[+] Time vanilla:
+real	0m3.237s
+[+] Vanilla done for CheckOptionsInner
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m3.217s
+[+] Comby done for CheckOptionsInner
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing CheckOptionsOuter
+[+] Time vanilla:
+real	0m3.208s
+[+] Vanilla done for CheckOptionsOuter
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m3.174s
+[+] Comby done for CheckOptionsOuter
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing DNS/DNSHandlePacket
+[+] Time vanilla:
+real	0m1.106s
+[+] Vanilla done for DNS/DNSHandlePacket
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.145s
+[+] Comby done for DNS/DNSHandlePacket
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing DNS/DNSclear
+[+] Time vanilla:
+real	0m1.126s
+[+] Vanilla done for DNS/DNSclear
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.107s
+[+] Comby done for DNS/DNSclear
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing DNS/DNSgetHostByName
+[+] Time vanilla:
+real	0m1.423s
+[+] Vanilla done for DNS/DNSgetHostByName
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.403s
+[+] Comby done for DNS/DNSgetHostByName
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing DNS/DNSgetHostByName_a
+[+] Time vanilla:
+real	0m1.734s
+[+] Vanilla done for DNS/DNSgetHostByName_a
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.766s
+[+] Comby done for DNS/DNSgetHostByName_a
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing DNS/DNSgetHostByName_cancel
+[+] Time vanilla:
+real	0m2.569s
+[+] Vanilla done for DNS/DNSgetHostByName_cancel
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m2.564s
+[+] Comby done for DNS/DNSgetHostByName_cancel
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing DNS/DNSlookup
+[+] Time vanilla:
+real	0m2.548s
+[+] Vanilla done for DNS/DNSlookup
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m2.485s
+[+] Comby done for DNS/DNSlookup
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing IP/SendEventToIPTask
+[+] Time vanilla:
+real	0m2.741s
+[+] Vanilla done for IP/SendEventToIPTask
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m2.771s
+[+] Comby done for IP/SendEventToIPTask
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing OTA/prvRequestJob_MQTT
+[+] Time vanilla:
+real	0m1.795s
+[+] Vanilla done for OTA/prvRequestJob_MQTT
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.764s
+[+] Comby done for OTA/prvRequestJob_MQTT
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing ParseDNSReply
+[+] Time vanilla:
+real	0m2.546s
+[+] Vanilla done for ParseDNSReply
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m2.587s
+[+] Comby done for ParseDNSReply
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing ProcessDHCPReplies
+[+] Time vanilla:
+real	0m1.558s
+[+] Vanilla done for ProcessDHCPReplies
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.579s
+[+] Comby done for ProcessDHCPReplies
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueueCreateCountingSemaphore
+[+] Time vanilla:
+real	0m1.161s
+[+] Vanilla done for Queue/QueueCreateCountingSemaphore
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.088s
+[+] Comby done for Queue/QueueCreateCountingSemaphore
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueueCreateCountingSemaphoreStatic
+[+] Time vanilla:
+real	0m1.131s
+[+] Vanilla done for Queue/QueueCreateCountingSemaphoreStatic
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.076s
+[+] Comby done for Queue/QueueCreateCountingSemaphoreStatic
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueueCreateMutex
+[+] Time vanilla:
+real	0m1.157s
+[+] Vanilla done for Queue/QueueCreateMutex
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.169s
+[+] Comby done for Queue/QueueCreateMutex
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueueCreateMutexStatic
+[+] Time vanilla:
+real	0m1.131s
+[+] Vanilla done for Queue/QueueCreateMutexStatic
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.161s
+[+] Comby done for Queue/QueueCreateMutexStatic
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueueGenericCreate/QueueGenericCreate__config_QueueGenericCreate_default
+[+] Time vanilla:
+real	0m1.165s
+[+] Vanilla done for Queue/QueueGenericCreate/QueueGenericCreate__config_QueueGenericCreate_default
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.086s
+[+] Comby done for Queue/QueueGenericCreate/QueueGenericCreate__config_QueueGenericCreate_default
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueueGenericCreate/QueueGenericCreate__config_QueueGenericCreate_noMutex
+[+] Time vanilla:
+real	0m1.125s
+[+] Vanilla done for Queue/QueueGenericCreate/QueueGenericCreate__config_QueueGenericCreate_noMutex
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.130s
+[+] Comby done for Queue/QueueGenericCreate/QueueGenericCreate__config_QueueGenericCreate_noMutex
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueueGenericCreate/QueueGenericCreate__config_QueueGenericCreate_noSTATIC_ALLOCATION
+[+] Time vanilla:
+real	0m0.942s
+[+] Vanilla done for Queue/QueueGenericCreate/QueueGenericCreate__config_QueueGenericCreate_noSTATIC_ALLOCATION
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.002s
+[+] Comby done for Queue/QueueGenericCreate/QueueGenericCreate__config_QueueGenericCreate_noSTATIC_ALLOCATION
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueueGenericCreate/QueueGenericCreate__config_QueueGenericCreate_useQueueSets
+[+] Time vanilla:
+real	0m1.142s
+[+] Vanilla done for Queue/QueueGenericCreate/QueueGenericCreate__config_QueueGenericCreate_useQueueSets
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.170s
+[+] Comby done for Queue/QueueGenericCreate/QueueGenericCreate__config_QueueGenericCreate_useQueueSets
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueueGenericCreateStatic/QueueGenericCreateStatic__config_QeueuGenericCreateStatic_DynamicAllocation
+[+] Time vanilla:
+real	0m1.140s
+[+] Vanilla done for Queue/QueueGenericCreateStatic/QueueGenericCreateStatic__config_QeueuGenericCreateStatic_DynamicAllocation
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.115s
+[+] Comby done for Queue/QueueGenericCreateStatic/QueueGenericCreateStatic__config_QeueuGenericCreateStatic_DynamicAllocation
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueueGenericCreateStatic/QueueGenericCreateStatic__config_QeueuGenericCreateStatic_NoDynamicAllocation
+[+] Time vanilla:
+real	0m1.151s
+[+] Vanilla done for Queue/QueueGenericCreateStatic/QueueGenericCreateStatic__config_QeueuGenericCreateStatic_NoDynamicAllocation
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.127s
+[+] Comby done for Queue/QueueGenericCreateStatic/QueueGenericCreateStatic__config_QeueuGenericCreateStatic_NoDynamicAllocation
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueueGenericReset
+[+] Time vanilla:
+real	0m1.165s
+[+] Vanilla done for Queue/QueueGenericReset
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.161s
+[+] Comby done for Queue/QueueGenericReset
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueueGenericSend/QueueGenericSend__config_QueueGenericSend_QueueSets
+[+] Time vanilla:
+real	0m1.266s
+[+] Vanilla done for Queue/QueueGenericSend/QueueGenericSend__config_QueueGenericSend_QueueSets
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.256s
+[+] Comby done for Queue/QueueGenericSend/QueueGenericSend__config_QueueGenericSend_QueueSets
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueueGenericSend/QueueGenericSend__config_QueueGenericSend_noQueueSets
+[+] Time vanilla:
+real	0m1.215s
+[+] Vanilla done for Queue/QueueGenericSend/QueueGenericSend__config_QueueGenericSend_noQueueSets
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.201s
+[+] Comby done for Queue/QueueGenericSend/QueueGenericSend__config_QueueGenericSend_noQueueSets
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueueGenericSendFromISR/QueueGenericSendFromISR__config_QueueGenericSendFromISR_QueueSets
+[+] Time vanilla:
+real	0m1.248s
+[+] Vanilla done for Queue/QueueGenericSendFromISR/QueueGenericSendFromISR__config_QueueGenericSendFromISR_QueueSets
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.351s
+[+] Comby done for Queue/QueueGenericSendFromISR/QueueGenericSendFromISR__config_QueueGenericSendFromISR_QueueSets
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueueGenericSendFromISR/QueueGenericSendFromISR__config_QueueGenericSendFromISR_noQueueSets
+[+] Time vanilla:
+real	0m1.212s
+[+] Vanilla done for Queue/QueueGenericSendFromISR/QueueGenericSendFromISR__config_QueueGenericSendFromISR_noQueueSets
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.176s
+[+] Comby done for Queue/QueueGenericSendFromISR/QueueGenericSendFromISR__config_QueueGenericSendFromISR_noQueueSets
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueueGetMutexHolder
+[+] Time vanilla:
+real	0m1.193s
+[+] Vanilla done for Queue/QueueGetMutexHolder
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.113s
+[+] Comby done for Queue/QueueGetMutexHolder
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueueGetMutexHolderFromISR
+[+] Time vanilla:
+real	0m1.071s
+[+] Vanilla done for Queue/QueueGetMutexHolderFromISR
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.057s
+[+] Comby done for Queue/QueueGetMutexHolderFromISR
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueueGiveFromISR/QueueGiveFromISR__config_QueueGiveFromISR_QueueSets
+[+] Time vanilla:
+real	0m1.506s
+[+] Vanilla done for Queue/QueueGiveFromISR/QueueGiveFromISR__config_QueueGiveFromISR_QueueSets
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.284s
+[+] Comby done for Queue/QueueGiveFromISR/QueueGiveFromISR__config_QueueGiveFromISR_QueueSets
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueueGiveFromISR/QueueGiveFromISR__config_QueueGiveFromISR_default
+[+] Time vanilla:
+real	0m1.212s
+[+] Vanilla done for Queue/QueueGiveFromISR/QueueGiveFromISR__config_QueueGiveFromISR_default
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.178s
+[+] Comby done for Queue/QueueGiveFromISR/QueueGiveFromISR__config_QueueGiveFromISR_default
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueueGiveMutexRecursive
+[+] Time vanilla:
+real	0m1.233s
+[+] Vanilla done for Queue/QueueGiveMutexRecursive
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.153s
+[+] Comby done for Queue/QueueGiveMutexRecursive
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueueMessagesWaiting
+[+] Time vanilla:
+real	0m1.067s
+[+] Vanilla done for Queue/QueueMessagesWaiting
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.064s
+[+] Comby done for Queue/QueueMessagesWaiting
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueuePeek
+[+] Time vanilla:
+real	0m1.183s
+[+] Vanilla done for Queue/QueuePeek
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.162s
+[+] Comby done for Queue/QueuePeek
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueueReceive
+[+] Time vanilla:
+real	0m1.180s
+[+] Vanilla done for Queue/QueueReceive
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.158s
+[+] Comby done for Queue/QueueReceive
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueueReceiveFromISR
+[+] Time vanilla:
+real	0m1.154s
+[+] Vanilla done for Queue/QueueReceiveFromISR
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.232s
+[+] Comby done for Queue/QueueReceiveFromISR
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueueSemaphoreTake
+[+] Time vanilla:
+real	0m1.285s
+[+] Vanilla done for Queue/QueueSemaphoreTake
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.221s
+[+] Comby done for Queue/QueueSemaphoreTake
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueueSpacesAvailable
+[+] Time vanilla:
+real	0m1.132s
+[+] Vanilla done for Queue/QueueSpacesAvailable
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.106s
+[+] Comby done for Queue/QueueSpacesAvailable
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/QueueTakeMutexRecursive
+[+] Time vanilla:
+real	0m1.190s
+[+] Vanilla done for Queue/QueueTakeMutexRecursive
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.169s
+[+] Comby done for Queue/QueueTakeMutexRecursive
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/prvCopyDataToQueue/prvCopyDataToQueue__config_prvCopyDataToQueue_default
+[+] Time vanilla:
+real	0m1.267s
+[+] Vanilla done for Queue/prvCopyDataToQueue/prvCopyDataToQueue__config_prvCopyDataToQueue_default
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.174s
+[+] Comby done for Queue/prvCopyDataToQueue/prvCopyDataToQueue__config_prvCopyDataToQueue_default
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/prvCopyDataToQueue/prvCopyDataToQueue__config_prvCopyDataToQueue_noMutex
+[+] Time vanilla:
+real	0m1.174s
+[+] Vanilla done for Queue/prvCopyDataToQueue/prvCopyDataToQueue__config_prvCopyDataToQueue_noMutex
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.161s
+[+] Comby done for Queue/prvCopyDataToQueue/prvCopyDataToQueue__config_prvCopyDataToQueue_noMutex
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/prvNotifyQueueSetContainer/prvNotifyQueueSetContainer__config_prvNotifyQueueSetContainer_Mutex
+[+] Time vanilla:
+real	0m1.209s
+[+] Vanilla done for Queue/prvNotifyQueueSetContainer/prvNotifyQueueSetContainer__config_prvNotifyQueueSetContainer_Mutex
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.179s
+[+] Comby done for Queue/prvNotifyQueueSetContainer/prvNotifyQueueSetContainer__config_prvNotifyQueueSetContainer_Mutex
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/prvNotifyQueueSetContainer/prvNotifyQueueSetContainer__config_prvNotifyQueueSetContainer_noMutex
+[+] Time vanilla:
+real	0m1.157s
+[+] Vanilla done for Queue/prvNotifyQueueSetContainer/prvNotifyQueueSetContainer__config_prvNotifyQueueSetContainer_noMutex
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.264s
+[+] Comby done for Queue/prvNotifyQueueSetContainer/prvNotifyQueueSetContainer__config_prvNotifyQueueSetContainer_noMutex
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/prvUnlockQueue/prvUnlockQueue__config_prvUnlockQueue_QueueSets
+[+] Time vanilla:
+real	0m1.228s
+[+] Vanilla done for Queue/prvUnlockQueue/prvUnlockQueue__config_prvUnlockQueue_QueueSets
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.173s
+[+] Comby done for Queue/prvUnlockQueue/prvUnlockQueue__config_prvUnlockQueue_QueueSets
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing Queue/prvUnlockQueue/prvUnlockQueue__config_prvUnlockQueue_noQueueSets
+[+] Time vanilla:
+real	0m1.271s
+[+] Vanilla done for Queue/prvUnlockQueue/prvUnlockQueue__config_prvUnlockQueue_noQueueSets
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.141s
+[+] Comby done for Queue/prvUnlockQueue/prvUnlockQueue__config_prvUnlockQueue_noQueueSets
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing ReadNameField
+[+] Time vanilla:
+real	0m1.104s
+[+] Vanilla done for ReadNameField
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.250s
+[+] Comby done for ReadNameField
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing SkipNameField
+[+] Time vanilla:
+real	0m1.111s
+[+] Vanilla done for SkipNameField
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.138s
+[+] Comby done for SkipNameField
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing TCP/prvTCPHandleState
+[+] Time vanilla:
+real	0m1.645s
+[+] Vanilla done for TCP/prvTCPHandleState
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.624s
+[+] Comby done for TCP/prvTCPHandleState
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing TCP/prvTCPPrepareSend
+[+] Time vanilla:
+real	0m1.618s
+[+] Vanilla done for TCP/prvTCPPrepareSend
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.503s
+[+] Comby done for TCP/prvTCPPrepareSend
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing TCP/prvTCPReturnPacket
+[+] Time vanilla:
+real	0m1.500s
+[+] Vanilla done for TCP/prvTCPReturnPacket
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.477s
+[+] Comby done for TCP/prvTCPReturnPacket
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing TaskPool/TaskCheckForTimeOut
+[+] Time vanilla:
+real	0m1.969s
+[+] Vanilla done for TaskPool/TaskCheckForTimeOut
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.962s
+[+] Comby done for TaskPool/TaskCheckForTimeOut
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing TaskPool/TaskCreate
+[+] Time vanilla:
+real	0m2.075s
+[+] Vanilla done for TaskPool/TaskCreate
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m2.167s
+[+] Comby done for TaskPool/TaskCreate
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing TaskPool/TaskDelay/TaskDelay__config_default
+[+] Time vanilla:
+real	0m1.379s
+[+] Vanilla done for TaskPool/TaskDelay/TaskDelay__config_default
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.386s
+[+] Comby done for TaskPool/TaskDelay/TaskDelay__config_default
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing TaskPool/TaskDelay/TaskDelay__config_vTaskSuspend0
+[+] Time vanilla:
+real	0m1.484s
+[+] Vanilla done for TaskPool/TaskDelay/TaskDelay__config_vTaskSuspend0
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.450s
+[+] Comby done for TaskPool/TaskDelay/TaskDelay__config_vTaskSuspend0
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing TaskPool/TaskDelete
+[+] Time vanilla:
+real	0m1.469s
+[+] Vanilla done for TaskPool/TaskDelete
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.417s
+[+] Comby done for TaskPool/TaskDelete
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing TaskPool/TaskGetCurrentTaskHandle
+[+] Time vanilla:
+real	0m2.019s
+[+] Vanilla done for TaskPool/TaskGetCurrentTaskHandle
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.979s
+[+] Comby done for TaskPool/TaskGetCurrentTaskHandle
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing TaskPool/TaskGetSchedulerState
+[+] Time vanilla:
+real	0m0.167s
+[+] Vanilla done for TaskPool/TaskGetSchedulerState
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m0.143s
+[+] Comby done for TaskPool/TaskGetSchedulerState
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing TaskPool/TaskGetTaskNumber
+[+] Time vanilla:
+real	0m2.112s
+[+] Vanilla done for TaskPool/TaskGetTaskNumber
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m2.039s
+[+] Comby done for TaskPool/TaskGetTaskNumber
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing TaskPool/TaskGetTickCount
+[+] Time vanilla:
+real	0m0.143s
+[+] Vanilla done for TaskPool/TaskGetTickCount
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m0.138s
+[+] Comby done for TaskPool/TaskGetTickCount
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing TaskPool/TaskIncrementTick/TaskIncrementTick__config_default
+[+] Time vanilla:
+real	0m2.090s
+[+] Vanilla done for TaskPool/TaskIncrementTick/TaskIncrementTick__config_default
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m2.084s
+[+] Comby done for TaskPool/TaskIncrementTick/TaskIncrementTick__config_default
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing TaskPool/TaskIncrementTick/TaskIncrementTick__config_useTickHook1
+[+] Time vanilla:
+real	0m2.058s
+[+] Vanilla done for TaskPool/TaskIncrementTick/TaskIncrementTick__config_useTickHook1
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m2.107s
+[+] Comby done for TaskPool/TaskIncrementTick/TaskIncrementTick__config_useTickHook1
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing TaskPool/TaskPrioritySet
+[+] Time vanilla:
+real	0m1.356s
+[+] Vanilla done for TaskPool/TaskPrioritySet
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.351s
+[+] Comby done for TaskPool/TaskPrioritySet
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing TaskPool/TaskResumeAll/TaskResumeAll__config_default
+[+] Time vanilla:
+real	0m1.397s
+[+] Vanilla done for TaskPool/TaskResumeAll/TaskResumeAll__config_default
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.384s
+[+] Comby done for TaskPool/TaskResumeAll/TaskResumeAll__config_default
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing TaskPool/TaskResumeAll/TaskResumeAll__config_useTickHook1
+
+
+[+] Time vanilla:
+real	0m1.413s
+[+] Vanilla done for TaskPool/TaskResumeAll/TaskResumeAll__config_useTickHook1
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.514s
+[+] Comby done for TaskPool/TaskResumeAll/TaskResumeAll__config_useTickHook1
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing TaskPool/TaskSetTimeOutState
+[+] Time vanilla:
+real	0m1.941s
+[+] Vanilla done for TaskPool/TaskSetTimeOutState
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.943s
+[+] Comby done for TaskPool/TaskSetTimeOutState
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing TaskPool/TaskStartScheduler
+[+] Time vanilla:
+real	0m2.006s
+[+] Vanilla done for TaskPool/TaskStartScheduler
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m2.055s
+[+] Comby done for TaskPool/TaskStartScheduler
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing TaskPool/TaskSuspendAll
+[+] Time vanilla:
+real	0m0.149s
+[+] Vanilla done for TaskPool/TaskSuspendAll
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m0.141s
+[+] Comby done for TaskPool/TaskSuspendAll
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing TaskPool/TaskSwitchContext
+[+] Time vanilla:
+real	0m2.005s
+[+] Vanilla done for TaskPool/TaskSwitchContext
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m2.021s
+[+] Comby done for TaskPool/TaskSwitchContext
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing parsing/ProcessIPPacket
+[+] Time vanilla:
+real	0m1.431s
+[+] Vanilla done for parsing/ProcessIPPacket
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.499s
+[+] Comby done for parsing/ProcessIPPacket
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing parsing/ProcessReceivedTCPPacket
+[+] Time vanilla:
+real	0m1.543s
+[+] Vanilla done for parsing/ProcessReceivedTCPPacket
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.629s
+[+] Comby done for parsing/ProcessReceivedTCPPacket
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
+
+[+] Doing parsing/ProcessReceivedUDPPacket
+[+] Time vanilla:
+real	0m1.515s
+[+] Vanilla done for parsing/ProcessReceivedUDPPacket
+Patching asserts in 'libraries' with comby...
+[+] Time comby:
+real	0m1.451s
+[+] Comby done for parsing/ProcessReceivedUDPPacket
+[+] Restored files
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-
